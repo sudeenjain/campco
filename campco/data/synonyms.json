@@ -1,0 +1,567 @@
+{
+ "_readme": "word -> list of words to ADD to the query before matching. Includes common Kannada words typed in English letters (Kanglish) and Kannada script.",
+ "cost": [
+  "price"
+ ],
+ "costs": [
+  "price"
+ ],
+ "costing": [
+  "price"
+ ],
+ "worth": [
+  "price"
+ ],
+ "mobile": [
+  "phone"
+ ],
+ "telephone": [
+  "phone"
+ ],
+ "tel": [
+  "phone"
+ ],
+ "whatsapp": [
+  "phone"
+ ],
+ "sms": [
+  "phone"
+ ],
+ "mailid": [
+  "email"
+ ],
+ "website": [
+  "contact"
+ ],
+ "url": [
+  "contact"
+ ],
+ "link": [
+  "contact"
+ ],
+ "ceo": [
+  "md"
+ ],
+ "boss": [
+  "md"
+ ],
+ "chief": [
+  "md"
+ ],
+ "head": [
+  "md"
+ ],
+ "job": [
+  "career"
+ ],
+ "work": [
+  "career"
+ ],
+ "recruit": [
+  "career"
+ ],
+ "buy": [
+  "shop"
+ ],
+ "purchase": [
+  "shop"
+ ],
+ "enquiry": [
+  "contact"
+ ],
+ "inquiry": [
+  "contact"
+ ],
+ "adike": [
+  "areca"
+ ],
+ "adakke": [
+  "areca"
+ ],
+ "adaike": [
+  "areca"
+ ],
+ "supari": [
+  "areca"
+ ],
+ "kokko": [
+  "cocoa"
+ ],
+ "koko": [
+  "cocoa"
+ ],
+ "kakao": [
+  "cocoa"
+ ],
+ "menasu": [
+  "pepper"
+ ],
+ "kalumenasu": [
+  "pepper"
+ ],
+ "kalu": [
+  "pepper"
+ ],
+ "tenginakayi": [
+  "coconut"
+ ],
+ "tenga": [
+  "coconut"
+ ],
+ "kobbari": [
+  "copra"
+ ],
+ "kobri": [
+  "copra"
+ ],
+ "rabbar": [
+  "rubber"
+ ],
+ "rabar": [
+  "rubber"
+ ],
+ "bele": [
+  "price",
+  "rate"
+ ],
+ "beley": [
+  "price",
+  "rate"
+ ],
+ "dara": [
+  "rate",
+  "price"
+ ],
+ "dhara": [
+  "rate",
+  "price"
+ ],
+ "daravu": [
+  "rate"
+ ],
+ "eshtu": [
+  "price"
+ ],
+ "yeshtu": [
+  "price"
+ ],
+ "maralu": [
+  "sell"
+ ],
+ "maaru": [
+  "sell"
+ ],
+ "maarata": [
+  "sell"
+ ],
+ "marata": [
+  "sell"
+ ],
+ "sadasya": [
+  "member"
+ ],
+ "sadasyathva": [
+  "membership"
+ ],
+ "sadasyatva": [
+  "membership"
+ ],
+ "adhyaksha": [
+  "president"
+ ],
+ "adyaksha": [
+  "president"
+ ],
+ "nirdeshaka": [
+  "director"
+ ],
+ "nirdeshakaru": [
+  "directors"
+ ],
+ "sampark": [
+  "contact"
+ ],
+ "samparka": [
+  "contact"
+ ],
+ "doorvani": [
+  "phone"
+ ],
+ "dooravani": [
+  "phone"
+ ],
+ "kacheri": [
+  "office"
+ ],
+ "vilasa": [
+  "address"
+ ],
+ "vilaasa": [
+  "address"
+ ],
+ "kelasa": [
+  "career"
+ ],
+ "udyoga": [
+  "career"
+ ],
+ "gobbara": [
+  "manure",
+  "fertilizer"
+ ],
+ "gobbra": [
+  "manure",
+  "fertilizer"
+ ],
+ "sahaya": [
+  "help"
+ ],
+ "sahaayavaani": [
+  "help"
+ ],
+ "suddi": [
+  "news"
+ ],
+ "samachara": [
+  "news"
+ ],
+ "sihi": [
+  "chocolate"
+ ],
+ "chocolet": [
+  "chocolate"
+ ],
+ "chakleta": [
+  "chocolate"
+ ],
+ "karkhane": [
+  "factory"
+ ],
+ "karkhaane": [
+  "factory"
+ ],
+ "namaskara": [
+  "hello"
+ ],
+ "ಬೆಲೆ": [
+  "price",
+  "rate"
+ ],
+ "ದರ": [
+  "rate",
+  "price"
+ ],
+ "ಧಾರಣೆ": [
+  "rate",
+  "price"
+ ],
+ "ಎಷ್ಟು": [
+  "price"
+ ],
+ "ಅಡಿಕೆ": [
+  "areca"
+ ],
+ "ಕೋಕೋ": [
+  "cocoa"
+ ],
+ "ಕಾಳುಮೆಣಸು": [
+  "pepper"
+ ],
+ "ಮೆಣಸು": [
+  "pepper"
+ ],
+ "ತೆಂಗು": [
+  "coconut"
+ ],
+ "ತೆಂಗಿನಕಾಯಿ": [
+  "coconut"
+ ],
+ "ಕೊಬ್ಬರಿ": [
+  "copra"
+ ],
+ "ರಬ್ಬರ್": [
+  "rubber"
+ ],
+ "ಸಂಪರ್ಕ": [
+  "contact"
+ ],
+ "ಫೋನ್": [
+  "phone"
+ ],
+ "ದೂರವಾಣಿ": [
+  "phone"
+ ],
+ "ಅಧ್ಯಕ್ಷ": [
+  "president"
+ ],
+ "ನಿರ್ದೇಶಕ": [
+  "director"
+ ],
+ "ಉದ್ಯೋಗ": [
+  "career"
+ ],
+ "ಸುದ್ದಿ": [
+  "news"
+ ],
+ "ಚಾಕೊಲೇಟ್": [
+  "chocolate"
+ ],
+ "ಚಾಕಲೇಟ್": [
+  "chocolate"
+ ],
+ "ಪ್ರಾಡಕ್ಟ್": [
+  "product"
+ ],
+ "ಪ್ರಾಡಕ್ಟ್ಸ್": [
+  "product"
+ ],
+ "ಪ್ರೊಡಕ್ಟ್": [
+  "product"
+ ],
+ "ಪ್ರೊಡಕ್ಟ್ಸ್": [
+  "product"
+ ],
+ "ಇಂಡಸ್ಟ್ರಿಯಲ್": [
+  "industrial"
+ ],
+ "ಇಂಡಸ್ಟ್ರಿಯಲ್‌": [
+  "industrial"
+ ],
+ "ಇಂಡಸ್ಟ್ರಿ": [
+  "industrial"
+ ],
+ "ಬಲ್ಕ್": [
+  "bulk"
+ ],
+ "ಕಾಂಪೌಂಡ್": [
+  "compound"
+ ],
+ "ಕೂವರ್ಚರ್": [
+  "couverture"
+ ],
+ "ಕಾಂಟ್ಯಾಕ್ಟ್": [
+  "contact"
+ ],
+ "ಕಾಂಟಾಕ್ಟ್": [
+  "contact"
+ ],
+ "ಕಂಟ್ಯಾಕ್ಟ್": [
+  "contact"
+ ],
+ "ನಂಬರ್": [
+  "number",
+  "phone"
+ ],
+ "ಅಡ್ರೆಸ್": [
+  "address"
+ ],
+ "ಅಡ್ರೆಸ್ಸ್": [
+  "address"
+ ],
+ "ಇಮೇಲ್": [
+  "email"
+ ],
+ "ಈಮೇಲ್": [
+  "email"
+ ],
+ "ಡೈರೆಕ್ಟರ್": [
+  "director"
+ ],
+ "ಡೈರೆಕ್ಟರ್ಸ್": [
+  "directors"
+ ],
+ "ಡೈರೆಕ್ಟರ್‌ಗಳು": [
+  "directors"
+ ],
+ "ಬೋರ್ಡ್": [
+  "board"
+ ],
+ "ಪ್ರೆಸಿಡೆಂಟ್": [
+  "president"
+ ],
+ "ಮ್ಯಾನೇಜಿಂಗ್": [
+  "managing"
+ ],
+ "ಮ್ಯಾನೇಜರ್": [
+  "manager"
+ ],
+ "ಎಂಡಿ": [
+  "md"
+ ],
+ "ಚಾಕ್ಲೇಟ್": [
+  "chocolate"
+ ],
+ "ಚಾಕ್ಲೆಟ್": [
+  "chocolate"
+ ],
+ "ಚಾಕಲೆಟ್": [
+  "chocolate"
+ ],
+ "ಚಾಕೊಲೆಟ್": [
+  "chocolate"
+ ],
+ "ಚಾಕೋಲೇಟ್": [
+  "chocolate"
+ ],
+ "ಫ್ಯಾಕ್ಟರಿ": [
+  "factory"
+ ],
+ "ವಿಸಿಟ್": [
+  "visit"
+ ],
+ "ಟೂರ್": [
+  "tour",
+  "visit"
+ ],
+ "ಕೆರಿಯರ್": [
+  "career"
+ ],
+ "ಜಾಬ್": [
+  "career"
+ ],
+ "ಜಾಬ್ಸ್": [
+  "career"
+ ],
+ "ವೇಕೆನ್ಸಿ": [
+  "career"
+ ],
+ "ನ್ಯೂಸ್": [
+  "news"
+ ],
+ "ಪ್ರೈಸ್": [
+  "price"
+ ],
+ "ರೇಟ್": [
+  "rate",
+  "price"
+ ],
+ "ರೇಟು": [
+  "rate",
+  "price"
+ ],
+ "ಆನ್‌ಲೈನ್": [
+  "online",
+  "shop"
+ ],
+ "ಆನ್ಲೈನ್": [
+  "online",
+  "shop"
+ ],
+ "ಶಾಪ್": [
+  "shop"
+ ],
+ "ಸ್ಟೋರ್": [
+  "shop"
+ ],
+ "ಆರ್ಡರ್": [
+  "order",
+  "shop"
+ ],
+ "ಡೆಲಿವರಿ": [
+  "delivery",
+  "shop"
+ ],
+ "ಮೆಂಬರ್": [
+  "member"
+ ],
+ "ಮೆಂಬರ್‌ಶಿಪ್": [
+  "membership"
+ ],
+ "ಬೆನಿಫಿಟ್": [
+  "benefit"
+ ],
+ "ಬೆನಿಫಿಟ್ಸ್": [
+  "benefit"
+ ],
+ "ಸ್ಕೀಮ್": [
+  "benefit"
+ ],
+ "ಬ್ರಾಂಚ್": [
+  "branch"
+ ],
+ "ಡಿಪೋ": [
+  "depot"
+ ],
+ "ಫೀಡ್‌ಬ್ಯಾಕ್": [
+  "feedback"
+ ],
+ "ಕಂಪ್ಲೇಂಟ್": [
+  "complaint"
+ ],
+ "ಟೆಂಡರ್": [
+  "tender"
+ ],
+ "ಎಲೆಕ್ಷನ್": [
+  "election"
+ ],
+ "ನೋಟಿಫಿಕೇಷನ್": [
+  "notification"
+ ],
+ "ಫರ್ಟಿಲೈಸರ್": [
+  "fertilizer",
+  "manure"
+ ],
+ "ಮ್ಯಾನ್ಯೂರ್": [
+  "manure"
+ ],
+ "ಕೊಕೊ": [
+  "cocoa"
+ ],
+ "ಪೆಪ್ಪರ್": [
+  "pepper"
+ ],
+ "ಕೋಕೋನಟ್": [
+  "coconut"
+ ],
+ "ಕೊಕೊನಟ್": [
+  "coconut"
+ ],
+ "ಕೋಕನಟ್": [
+  "coconut"
+ ],
+ "ಆಯಿಲ್": [
+  "oil"
+ ],
+ "ಪೌಡರ್": [
+  "powder"
+ ],
+ "ಡಿಸ್ಟ್ರಿಬ್ಯೂಟರ್": [
+  "distributor"
+ ],
+ "ಡೀಲರ್": [
+  "distributor"
+ ],
+ "ಗಿಫ್ಟ್": [
+  "gift"
+ ],
+ "ರೆಸಿಪಿ": [
+  "recipe"
+ ],
+ "ಸರ್ಟಿಫಿಕೇಟ್": [
+  "certificate"
+ ],
+ "ಅವಾರ್ಡ್": [
+  "award"
+ ],
+ "ಹೆಲ್ಪ್": [
+  "help"
+ ],
+ "ಕ್ಯಾಂಪ್ಕೊ": [
+  "campco"
+ ],
+ "ಕಂಪನಿ": [
+  "company"
+ ],
+ "ಕಂಪೆನಿ": [
+  "company"
+ ],
+ "ಹಿಸ್ಟರಿ": [
+  "history"
+ ],
+ "ಇತಿಹಾಸ": [
+  "history"
+ ],
+ "industrial": [
+  "industrial"
+ ]
+}

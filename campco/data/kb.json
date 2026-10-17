@@ -1,0 +1,1467 @@
+{
+ "_readme": "Edit answers here. Fields: id, t (chip title), k (keywords), a (answer, **bold** and bullet lines starting with the bullet char), l ([[label,url]]), f (follow-up ids), live (time-sensitive). Kannada text lives in kn.json.",
+ "meta": {
+  "updated": "2026-10-16",
+  "site": "https://campco.org",
+  "cart": "https://campcocart.com",
+  "phone": "0824 2888200",
+  "email": "info@campco.org",
+  "chips": [
+   [
+    "Products",
+    "#products"
+   ],
+   [
+    "Buy chocolates",
+    "#shop"
+   ],
+   [
+    "Member benefits",
+    "#benefit"
+   ],
+   [
+    "Directors",
+    "#board"
+   ],
+   [
+    "Factory visit",
+    "#visit"
+   ],
+   [
+    "Fertilizers",
+    "#manure"
+   ],
+   [
+    "Contact",
+    "#contact"
+   ],
+   [
+    "Latest news",
+    "#news"
+   ]
+  ]
+ },
+ "entries": [
+  {
+   "id": "about",
+   "t": "About CAMPCO",
+   "k": [
+    "about campco",
+    "what is campco",
+    "who are you",
+    "about us",
+    "campco history",
+    "history",
+    "established",
+    "founded",
+    "when was campco founded",
+    "registered",
+    "since when",
+    "campco story",
+    "overview",
+    "tell me about campco",
+    "cooperative",
+    "co-operative",
+    "society",
+    "timeline"
+   ],
+   "a": "**CAMPCO** (The Central Arecanut and Cocoa Marketing and Processing Co-operative Ltd.) is a farmer-led, multi-state co-operative founded in 1973 in Mangalore.\n\nArecanut prices fell by roughly half in 1970-71. On an Expert Committee's advice, and with support from the Karnataka and Kerala governments, CAMPCO was registered on 11 July 1973.\n\nIt now procures arecanut, cocoa, pepper, rubber and coconut/copra from growers, runs a chocolate factory at Puttur and sells value-added products under the Campco brand.",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "objectives",
+    "founder",
+    "stats"
+   ]
+  },
+  {
+   "id": "objectives",
+   "t": "Objectives",
+   "k": [
+    "objectives",
+    "objective",
+    "aim",
+    "aims",
+    "purpose",
+    "why was campco formed",
+    "why campco",
+    "goals",
+    "what does campco do"
+   ],
+   "a": "CAMPCO's objectives:\n• Procure arecanut and cocoa from member growers (and others where needed) on agency or outright purchase basis\n• Sell produce and products to the best advantage of members\n• Give advance loans to members against pledged goods\n• Promote and develop areca and cocoa cultivation, marketing and processing",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "about",
+    "benefit",
+    "products"
+   ]
+  },
+  {
+   "id": "founder",
+   "t": "Founder",
+   "k": [
+    "founder",
+    "subraya bhat",
+    "varanashi",
+    "who started",
+    "who founded",
+    "sahakari ratna",
+    "sahakarita ratna",
+    "varanashi subraya bhat"
+   ],
+   "a": "**Late Sri Varanashi Subraya Bhat** (born 8 June 1927 near Adyanadka, Karnataka) founded CAMPCO and was its Founder President from 1973 to December 1990.\n\n• Founded the Puttur chocolate factory (1986)\n• President, All India Arecanut and Cocoa Growers' Association\n• Chairman, Cocoa and Arecanut Development Committee (Ministry of Agriculture)\n• Awards: \"Sahakari Ratna\" (Govt. of Karnataka, 2002) and \"Sahakarita Ratna\" (IFFCO, 2005)",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "formerpres",
+    "factory",
+    "about"
+   ]
+  },
+  {
+   "id": "stats",
+   "t": "CAMPCO at a glance",
+   "k": [
+    "members",
+    "how many members",
+    "member count",
+    "branches",
+    "how many branches",
+    "how many factories",
+    "statistics",
+    "stats",
+    "numbers",
+    "procurement centres",
+    "procurement centers",
+    "sales depots",
+    "depots",
+    "size",
+    "how big",
+    "at a glance"
+   ],
+   "a": "**CAMPCO at a glance**\n• 1,50,000+ members\n• 1 factory (Puttur)\n• 156 branches\n• 19 directors\n• Arecanut: 118 procurement centres across Karnataka and Kerala (it began with just 5) and 14 sales depots across India",
+   "l": [
+    [
+     "Home",
+     "https://campco.org/"
+    ]
+   ],
+   "f": [
+    "about",
+    "areca",
+    "board"
+   ]
+  },
+  {
+   "id": "contact",
+   "t": "Contact",
+   "k": [
+    "contact",
+    "contact number",
+    "phone",
+    "phone number",
+    "call",
+    "email",
+    "email id",
+    "mail id",
+    "address",
+    "head office",
+    "where is campco",
+    "location",
+    "reach you",
+    "mail",
+    "customer care",
+    "helpline",
+    "helpdesk",
+    "office",
+    "toll free",
+    "get in touch"
+   ],
+   "a": "**The CAMPCO Ltd. - Head Office**\nP.B. No. 223, \"Varanashi Towers\", Mission Street,\nMangalore, Dakshina Kannada, Karnataka - 575001\n\nPhone: 0824 2888200\nEmail: info@campco.org\n\nOnline shop (CAMPCO Cart) help: +91 90355 68442",
+   "l": [
+    [
+     "Contact Us",
+     "https://campco.org/contact-us/"
+    ],
+    [
+     "Shop contact",
+     "https://campcocart.com/pages/contact"
+    ]
+   ],
+   "f": [
+    "distributor",
+    "branchloc",
+    "management"
+   ]
+  },
+  {
+   "id": "branchloc",
+   "t": "Branches & depots",
+   "k": [
+    "nearest branch",
+    "branch near me",
+    "branch address",
+    "branch location",
+    "branch list",
+    "depot address",
+    "depot location",
+    "procurement centre address",
+    "where is the branch",
+    "branch contact"
+   ],
+   "a": "CAMPCO has 156 branches, 118 arecanut procurement centres (Karnataka and Kerala) and 14 arecanut sales depots across India.\n\nI don't have individual branch or depot addresses, so for the nearest one please call the Head Office on 0824 2888200 or email info@campco.org. For chocolate sales offices, use the Sales Offices page.",
+   "l": [
+    [
+     "Contact Us",
+     "https://campco.org/contact-us/"
+    ],
+    [
+     "Sales Offices",
+     "https://campcocart.com/pages/locate-sales-offices"
+    ]
+   ],
+   "f": [
+    "contact",
+    "stats"
+   ]
+  },
+  {
+   "id": "products",
+   "t": "Products",
+   "k": [
+    "products",
+    "what do you sell",
+    "what do you buy",
+    "what do you deal in",
+    "commodities",
+    "commodity",
+    "crops",
+    "product list",
+    "offerings"
+   ],
+   "a": "CAMPCO deals in five core commodities:\n• **Areca** (arecanut)\n• **Pepper**\n• **Cocoa**\n• **Rubber**\n• **Coconut / Copra**\n\nIt also makes chocolates and cocoa products, Campco Calpa coconut oil and Kala Sona black pepper, and sells manures and fertilizers to growers. Tap a topic below or ask me about any of them.",
+   "l": [
+    [
+     "Products",
+     "https://campco.org/products/"
+    ]
+   ],
+   "f": [
+    "areca",
+    "cocoa",
+    "shop",
+    "manure"
+   ]
+  },
+  {
+   "id": "areca",
+   "t": "Arecanut",
+   "k": [
+    "areca",
+    "arecanut",
+    "areca nut",
+    "betel nut",
+    "supari",
+    "white supari",
+    "red supari",
+    "arecanut varieties",
+    "adike",
+    "areca price"
+   ],
+   "a": "Areca (betel nut) is the seed of a berry-class fruit. Two main varieties:\n• **White Supari** - ripe nut, sun-dried\n• **Red Supari** - tender green nut, husk removed\n\nCAMPCO entered the arecanut market in November 1973 and brought prices back to pre-fall levels. It started with 5 procurement centres and now has 118 (Karnataka and Kerala) plus 14 sales depots across India.\n\nIndia is the world's largest producer: about 264,000 ha and 313,000 tonnes a year. Karnataka and Kerala give about 72% of output, over 85% is small and marginal holdings, and over 6 million people are engaged in the crop.",
+   "l": [
+    [
+     "Areca",
+     "https://campco.org/areca/"
+    ]
+   ],
+   "f": [
+    "rates",
+    "sell",
+    "pepper"
+   ],
+   "live": false
+  },
+  {
+   "id": "pepper",
+   "t": "Pepper",
+   "k": [
+    "pepper",
+    "black pepper",
+    "kala sona",
+    "king of spices",
+    "spice",
+    "spices",
+    "spice toffee",
+    "ginger toffee"
+   ],
+   "a": "Pepper is the \"King of Spices\". CAMPCO procures and markets pepper, and its value-added product is **Campco Kala Sona** - garbled, graded black pepper.\n\nCampco Chocolates has also launched a \"Spice Toffee\" made with black pepper and ginger extract.\n\nKala Sona was listed at Rs. 45 on the online shop when this guide was compiled; please check the shop for the current price and stock.",
+   "l": [
+    [
+     "Pepper",
+     "https://campco.org/pepper/"
+    ],
+    [
+     "Buy Kala Sona",
+     "https://campcocart.com/products/kala-sona"
+    ]
+   ],
+   "f": [
+    "shop",
+    "coconut",
+    "areca"
+   ],
+   "live": true
+  },
+  {
+   "id": "cocoa",
+   "t": "Cocoa",
+   "k": [
+    "cocoa",
+    "cacao",
+    "cocoa beans",
+    "cocoa powder",
+    "wet beans",
+    "cocoa wet",
+    "dry beans",
+    "cocoa story",
+    "cocoa handbook",
+    "cocoa cultivation"
+   ],
+   "a": "CAMPCO sources cocoa beans from farmers in Karnataka and Kerala.\n\nIt promoted cocoa as a supplementary crop in the late 1970s. When buyers withdrew after an international price crash, CAMPCO stepped in, adopted scientific processing and produced dry beans comparable in quality to Ghana and Brazil, helping establish Indian cocoa. To create a steady market, it then built the chocolate factory.\n\nCocoa goes into ice cream, biscuits, drinking chocolate, fillings, soaps and skincare.",
+   "l": [
+    [
+     "Cocoa",
+     "https://campco.org/cocoa/"
+    ],
+    [
+     "Cocoa Handbook (PDF)",
+     "https://campco.org/wp-content/uploads/2022/04/cocoa-handbook.pdf"
+    ]
+   ],
+   "f": [
+    "factory",
+    "sell",
+    "industrial"
+   ]
+  },
+  {
+   "id": "rubber",
+   "t": "Rubber",
+   "k": [
+    "rubber",
+    "natural rubber",
+    "rubber trading",
+    "rubber price"
+   ],
+   "a": "CAMPCO has traded in natural rubber for 10+ years, supporting arecanut growers who took up rubber to boost their income. It procures from parts of Karnataka and Kerala, with collection centres opening in phases.\n\nNatural rubber serves the automobile, electronics, electrical, health care and power transmission industries.",
+   "l": [
+    [
+     "Rubber",
+     "https://campco.org/rubber/"
+    ]
+   ],
+   "f": [
+    "rates",
+    "sell",
+    "products"
+   ]
+  },
+  {
+   "id": "coconut",
+   "t": "Coconut / Calpa",
+   "k": [
+    "coconut",
+    "copra",
+    "calpa",
+    "coconut oil",
+    "campco calpa",
+    "oil",
+    "edible oil",
+    "cooking oil"
+   ],
+   "a": "CAMPCO began purchasing coconut and copra in **September 2023**, offering farmers an assured market, fair prices and timely payment.\n\nValue-added product: **Campco Calpa** coconut oil, made from quality copra bought directly from farmers.\n• Pack sizes: 500 ml and 1 L bottles, 500 ml and 1 L pouches, 5 L can\n• Listed from Rs. 218 on the online shop (check for the current price)",
+   "l": [
+    [
+     "Coconut/Copra",
+     "https://campco.org/coconut-copra/"
+    ],
+    [
+     "Buy Calpa",
+     "https://campcocart.com/products/campco-calpa"
+    ]
+   ],
+   "f": [
+    "shop",
+    "sell",
+    "pepper"
+   ],
+   "live": true
+  },
+  {
+   "id": "rates",
+   "t": "Procurement rates",
+   "k": [
+    "rate",
+    "rates",
+    "procurement rate",
+    "market rate",
+    "today rate",
+    "todays rate",
+    "arecanut rate",
+    "areca rate",
+    "cocoa rate",
+    "cocoa price",
+    "price of arecanut",
+    "price of cocoa",
+    "daily price",
+    "current price",
+    "mandi",
+    "buying price",
+    "support price"
+   ],
+   "a": "Arecanut and cocoa buying rates change daily, so I can't quote them reliably and won't guess.\n\nPlease call your nearest CAMPCO branch or the Head Office on 0824 2888200 (or email info@campco.org) for today's rates.",
+   "l": [
+    [
+     "Contact Us",
+     "https://campco.org/contact-us/"
+    ]
+   ],
+   "f": [
+    "branchloc",
+    "sell",
+    "contact"
+   ],
+   "live": true
+  },
+  {
+   "id": "sell",
+   "t": "Sell my produce",
+   "k": [
+    "sell my arecanut",
+    "sell arecanut",
+    "sell cocoa",
+    "sell my produce",
+    "how to sell",
+    "selling",
+    "procure",
+    "procurement",
+    "procurement centres near",
+    "tender my arecanut",
+    "supply",
+    "farmer sell",
+    "become a member",
+    "join campco",
+    "membership",
+    "how to join",
+    "enrol",
+    "register as member",
+    "new member"
+   ],
+   "a": "CAMPCO buys arecanut, cocoa, pepper, rubber and coconut/copra directly from growers. Arecanut is bought through 118 procurement centres across Karnataka and Kerala; cocoa wet beans are also purchased from farmers.\n\nI don't have the step-by-step enrolment or tendering procedure or current rates, so please contact your nearest branch or the Head Office (0824 2888200 / info@campco.org). Note that \"active member\" status for benefit schemes needs arecanut tendered continuously over the last 3 financial years (average 1 quintal a year).",
+   "l": [
+    [
+     "Contact Us",
+     "https://campco.org/contact-us/"
+    ],
+    [
+     "Member Benefit Scheme",
+     "https://campco.org/member-benefit-scheme/"
+    ]
+   ],
+   "f": [
+    "rates",
+    "branchloc",
+    "benefit"
+   ]
+  },
+  {
+   "id": "factory",
+   "t": "Chocolate factory",
+   "k": [
+    "chocolate factory",
+    "factory",
+    "puttur",
+    "kemminje",
+    "ccf",
+    "nestle",
+    "manufacturing",
+    "plant",
+    "licensed capacity",
+    "capacity",
+    "moulded line",
+    "count line",
+    "chocolate drinks"
+   ],
+   "a": "The **CAMPCO Chocolate Factory (CCF)** is at Kemminje village, Puttur Taluk, Dakshina Kannada.\n• Established 1986 with foreign collaboration; initial investment Rs. 116.7 million; licensed capacity 880 metric tonnes\n• Technical cooperation venture with Nestle (India) Ltd for product diversification\n• Semi-finished: cocoa mass, cocoa butter, cocoa powder\n• Finished: moulded line, count line, chocolate drinks\n• Made under its own brand and for other brands",
+   "l": [
+    [
+     "The Chocolate Factory",
+     "https://campcocart.com/pages/the-chocolate-factory"
+    ]
+   ],
+   "f": [
+    "visit",
+    "cert",
+    "green"
+   ]
+  },
+  {
+   "id": "visit",
+   "t": "Factory visit",
+   "k": [
+    "factory visit",
+    "visit factory",
+    "industrial visit",
+    "visit campco",
+    "tour",
+    "visit the factory",
+    "can i visit",
+    "plant visit",
+    "school visit",
+    "student visit"
+   ],
+   "a": "You can arrange a visit to the CAMPCO chocolate factory (Puttur) through the factory-visit page below.",
+   "l": [
+    [
+     "Visit Campco Factory",
+     "https://campcocart.com/pages/visit-campco-factory"
+    ]
+   ],
+   "f": [
+    "factory",
+    "contact"
+   ]
+  },
+  {
+   "id": "cert",
+   "t": "Certifications",
+   "k": [
+    "iso",
+    "certification",
+    "certifications",
+    "fssc",
+    "fssc 22000",
+    "fssai",
+    "food safety",
+    "certified",
+    "iso 14001",
+    "iso 45001",
+    "quality standards",
+    "quality certificate",
+    "safe"
+   ],
+   "a": "The CAMPCO Chocolate Factory holds:\n• **FSSC 22000 (Version 6)** - Food Safety System Certification\n• **ISO 14001:2015** - Environmental Management System\n• **ISO 45001:2018** - Occupational Health and Safety\n\nIt operates with a new Amenity Building to meet international food-safety standards and FSSAI zoning. FSSAI Food Safety Connect app: https://fssai.gov.in/cms/food-safety-connect.php",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "factory",
+    "green",
+    "rating"
+   ]
+  },
+  {
+   "id": "rating",
+   "t": "Credit rating",
+   "k": [
+    "credit rating",
+    "crisil",
+    "rating",
+    "bank loan",
+    "loan rated",
+    "financial strength",
+    "a1",
+    "creditworthy"
+   ],
+   "a": "CAMPCO is rated by **CRISIL**. For 2024-25:\n• Total bank loan rated: Rs. 630 Crore\n• Long-term rating: A (stable)\n• Short-term rating: A1\n\n(The same ratings were published for the previous year as well.)",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "cert",
+    "awards",
+    "stats"
+   ]
+  },
+  {
+   "id": "green",
+   "t": "Wind & solar energy",
+   "k": [
+    "windmill",
+    "windmills",
+    "solar",
+    "energy",
+    "green energy",
+    "renewable",
+    "power",
+    "wind",
+    "wind energy",
+    "electricity",
+    "sustainability",
+    "sustainable",
+    "eco friendly",
+    "carbon",
+    "suzlon",
+    "gamesa"
+   ],
+   "a": "**Wind and solar at the factory**\n• Suzlon - 1 unit, Hoovinahadagali (1.25 MW, installed 2008-09): 15,03,750 units in 2024-25\n• Gamesa - 2 units, Chikkodi (0.85 MW each, installed 2011-12): 19,30,000 units in 2024-25\n• Total windmill units wheeled in 2024-25: 34,33,750 (2023-24: 34,95,000)\n• Solar project at CCF Puttur (500 kW): 5,61,243 units in 2024-25 (2023-24: 6,45,341)\n\nWindmills meet about 50% of the factory's energy need and solar about 8% of roughly 72 lakh units.",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "etp",
+    "cert",
+    "factory"
+   ]
+  },
+  {
+   "id": "etp",
+   "t": "Effluent & sewage treatment",
+   "k": [
+    "etp",
+    "effluent",
+    "sewage",
+    "stp",
+    "waste water",
+    "wastewater",
+    "pollution",
+    "waste",
+    "water treatment",
+    "cpcb",
+    "kspcb"
+   ],
+   "a": "The factory has an upgraded **Effluent Treatment Plant** (meets CPCB and KSPCB standards; treated water is reused on the premises) and a newly installed **Sewage Treatment Plant** (meets KSPCB standards).",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "green",
+    "cert"
+   ]
+  },
+  {
+   "id": "skill",
+   "t": "Training",
+   "k": [
+    "skill",
+    "skills",
+    "training",
+    "skill development",
+    "tree climbing",
+    "ardf",
+    "climbing",
+    "leadership programme",
+    "fire fighting",
+    "natcon",
+    "ncui",
+    "workshop"
+   ],
+   "a": "**Skill development and training**\n• Arecanut tree-climbing training with ARDF at CPCRI Vittal (Dec 2018, Feb 2019): 53 youth trained\n• Cocoa quality, purchase and pricing training: 25 employees, CCF Puttur, 1 Jun 2024\n• ERP training (basics, M3 navigation, MIS reports): Head Office, 14 Sep 2024\n• NATCON conference, Mangaluru: 5 officials, 27-28 Sep 2024\n• Leadership Development Programme for Directors and Chairpersons: NCUI New Delhi, 22-24 Oct 2024\n• Fire-fighting training: 2 officials, 12-13 Sep 2024\n• Prevention of Sexual Harassment sensitisation: 70 employees, 30 Sep 2024\n• Growers' technology and marketing training at ICAR KVK, Gobichettipalayam, Tamil Nadu",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "rnd",
+    "farmersdesk",
+    "awards"
+   ]
+  },
+  {
+   "id": "rnd",
+   "t": "Research & development",
+   "k": [
+    "research",
+    "r&d",
+    "research and development",
+    "krishi yantra mela",
+    "yantra mela",
+    "trust",
+    "heggade",
+    "dharmasthala",
+    "r&d trust"
+   ],
+   "a": "• The **R&D Trust** was established on 20 May 1998. President: Dr. D. Veerendra Heggade (Dharmasthala); Managing Trustee: the CAMPCO President.\n• A new R&D wing has opened; price behaviour analysis is its first step.\n• **Krishi Yantra Mela** (ARDF with CAMPCO and Vivekananda Engineering College): 2009, 2012, 2015, 2019 and 2023.",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "skill",
+    "farmersdesk"
+   ]
+  },
+  {
+   "id": "awards",
+   "t": "Awards",
+   "k": [
+    "award",
+    "awards",
+    "recognition",
+    "recognitions",
+    "export excellence",
+    "achievement",
+    "achievements",
+    "fieo",
+    "fkcci",
+    "msme",
+    "honours",
+    "honors"
+   ],
+   "a": "**Awards and recognitions**\n• 2014 - Govt. of Karnataka: State Export Excellence Award (Gold)\n• 2016 - Govt. of Karnataka: Best Export Award, Processed Foods\n• 2016 - FIEO Southern Region: Export Excellence Award\n• 2018 - FIEO Southern Region: Top Multi-Product Group Exporter\n• 2019 - FIEO Southern Region: Export Excellence Award\n• 2021 - FKCCI: Special Recognition Award\n• 2025 - Coastal Karnataka MSME: Best Agri Business Enterprise Award",
+   "l": [
+    [
+     "About Us",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "rating",
+    "cert",
+    "factory"
+   ]
+  },
+  {
+   "id": "president",
+   "t": "President",
+   "k": [
+    "president",
+    "current president",
+    "satishchandra",
+    "satish chandra",
+    "sathishchandra",
+    "who is the president",
+    "chairman",
+    "vice president",
+    "padmaraj",
+    "pattaje"
+   ],
+   "a": "**Sri S.R. Satishchandra** is the current President of CAMPCO. He took office for the second time on 3 December 2025 (he was previously President from 31 Aug 2015 to 12 Dec 2020).\n\nThe Vice President is **Sri Padmaraj Pattaje**.",
+   "l": [
+    [
+     "Board of Directors",
+     "https://campco.org/board-of-directors/"
+    ]
+   ],
+   "f": [
+    "board",
+    "formerpres",
+    "messages"
+   ]
+  },
+  {
+   "id": "md",
+   "t": "Managing Director",
+   "k": [
+    "managing director",
+    "md",
+    "sathyanarayana",
+    "satyanarayana",
+    "current md",
+    "who is the md",
+    "ceo",
+    "head of campco",
+    "bvs"
+   ],
+   "a": "**Dr. B.V. Sathyanarayana** is the Managing Director (since 1 May 2024).\nEmail: bvsnarayana@campco.org",
+   "l": [
+    [
+     "Top Management",
+     "https://campco.org/top-management/"
+    ]
+   ],
+   "f": [
+    "management",
+    "formermd",
+    "messages"
+   ]
+  },
+  {
+   "id": "board",
+   "t": "Board of Directors",
+   "k": [
+    "board of directors",
+    "directors",
+    "director",
+    "board",
+    "director list",
+    "who are the directors",
+    "how many directors",
+    "board members"
+   ],
+   "a": "**Board of Directors (19)**\n1. Sri S.R. Satishchandra - President\n2. Sri Padmaraj Pattaje - Vice President\n3. Sri Dayananda Hegde\n4. Sri M. Mahesh Chouta M\n5. Sri Radhakrishnan K\n6. Sri Sathyanarayana Prasad\n7. Sri Raghavendra H M\n8. Sri Satheeshchandra Bhandary K\n9. Sri Theertharama A V\n10. Sri Purushothama Bhat M\n11. Sri Venkatramana Bhat Y\n12. Sri Vivekananda Gowda P\n13. Sri Sadananda Shetty K\n14. Sri Murali Krishna K N\n15. Sri Ganesh Parakatta\n16. Smt. Malini Prasad\n17. Smt. Sowmya Prakash Madangallu\n18. Sri Vishwanath Ishwar Hegde\n19. Sri Ganesh",
+   "l": [
+    [
+     "Board of Directors",
+     "https://campco.org/board-of-directors/"
+    ]
+   ],
+   "f": [
+    "president",
+    "management",
+    "formerpres"
+   ]
+  },
+  {
+   "id": "management",
+   "t": "Top management",
+   "k": [
+    "top management",
+    "management",
+    "general manager",
+    "gm",
+    "dgm",
+    "agm",
+    "officers",
+    "staff email",
+    "manager",
+    "executives",
+    "senior officials",
+    "management team",
+    "official email"
+   ],
+   "a": "**Top management**\n1. Dr. B.V. Sathyanarayana - Managing Director (bvsnarayana@campco.org)\n2. Reshma Mallya - General Manager (reshmamallya@campco.org)\n3. Govinda Bhat S - Dy. General Manager, Marketing (govindabhats@campco.org)\n4. Raghavendra P - Asst. General Manager, Marketing (raghavendrap@campco.org)\n5. Shyam Prasad H - Dy. General Manager I/C, CCF (shyamprasadh@campco.org)\n6. Udayakumar Rai - Asst. General Manager, Marketing - CMD 1 (udayakumarrai@campco.org)\n7. P. Muralidhara - Asst. General Manager, Accounts I/C (pmuralidhara@campco.org)",
+   "l": [
+    [
+     "Top Management",
+     "https://campco.org/top-management/"
+    ]
+   ],
+   "f": [
+    "md",
+    "board",
+    "contact"
+   ]
+  },
+  {
+   "id": "formermd",
+   "t": "Former MDs",
+   "k": [
+    "former managing director",
+    "former managing directors",
+    "former md",
+    "previous md",
+    "past md",
+    "previous managing director",
+    "earlier md",
+    "list of mds",
+    "all mds"
+   ],
+   "a": "**Former Managing Directors**\nG.K. Sangameshwar (1973-78), D.V. Nayak (1978), A.A. Desai IAS (1978-88), Sudhir Kumar IAS (1988), C.N. Parashiva Murthy (1988-89), M.S. Mudnur (1989-92), S.D. Meena IAS (1992-93), Rajneesh Goel IAS (1993-95), K. Pramod Kumar Rai (1995-2000), R. Seetharam (2000-03), V. Channappa (2003), G.R. Krishnadas (2003-05), P. Madhusudan Rao (2005-10), A. Subramanya Bhat (2010-12), Suresh Bhandary M (2012-Apr 2021), Krishna Kumar H M (2021-Apr 2024) and Dr. B.V. Sathyanarayana (May 2024 - present).\n\nTip: ask \"who was MD in 1995?\" for a specific year.",
+   "l": [
+    [
+     "Former MDs",
+     "https://campco.org/former-managing-directors/"
+    ]
+   ],
+   "f": [
+    "md",
+    "formerpres"
+   ]
+  },
+  {
+   "id": "formerpres",
+   "t": "Former Presidents",
+   "k": [
+    "former president",
+    "former presidents",
+    "previous president",
+    "past president",
+    "earlier president",
+    "presidents list",
+    "list of presidents",
+    "all presidents",
+    "kodgi",
+    "kishore kumar kodgi"
+   ],
+   "a": "**Presidents since 1973**\nVaranashi Subraya Bhat (1973-78, 1978-83, 1984-90), M. Ramappa, P. Ishwara Bhat, B. Narayana Nayak, K. Rama Bhat (1991-93, 1994-96), Khandige Srikrishna Bhat, S.R. Rangamurthy (1997-2001, 2005-10), B. Nagaraja Shetty (2001-04), V. Srikrishna Bhat, L.N. Kudoor, Konkodi Padmanabha (2010-15), S.R. Satishchandra (2015-20), A. Kishore Kumar Kodgi (Dec 2020 - Dec 2025) and S.R. Satishchandra again (3 Dec 2025 - present).\n\nTip: ask \"who was president in 1985?\" for a specific year.",
+   "l": [
+    [
+     "Former Presidents",
+     "https://campco.org/former-president/"
+    ]
+   ],
+   "f": [
+    "president",
+    "founder",
+    "formermd"
+   ]
+  },
+  {
+   "id": "messages",
+   "t": "Leadership messages",
+   "k": [
+    "president message",
+    "md message",
+    "message",
+    "messages",
+    "vision",
+    "mission",
+    "president speech",
+    "md speech"
+   ],
+   "a": "**President's message:** Sri Satishchandra thanks the thousands of farmers who regard CAMPCO as their strength, support and extended family, and renews his commitment on assuming office for the second time.\n\n**Managing Director's message:** Dr. Sathyanarayana describes CAMPCO as a farmer-led, multi-state co-operative committed to farmers' betterment since 1973. It began with arecanut and has added cocoa, rubber, pepper and coconut.",
+   "l": [
+    [
+     "Read more",
+     "https://campco.org/about-us/"
+    ]
+   ],
+   "f": [
+    "president",
+    "md",
+    "about"
+   ]
+  },
+  {
+   "id": "benefit",
+   "t": "Member benefits",
+   "k": [
+    "member benefit",
+    "benefit scheme",
+    "benefits",
+    "benefit",
+    "medical",
+    "medical help",
+    "hospitalization",
+    "hospitalisation",
+    "accident",
+    "accidental death",
+    "disability",
+    "permanent disability",
+    "education fund",
+    "active member",
+    "insurance",
+    "financial assistance",
+    "scheme",
+    "schemes",
+    "higher studies",
+    "scholarship",
+    "major hospitalization"
+   ],
+   "a": "**Member Benefit Scheme** - financial assistance for:\n• Medical treatment of a grower member or dependent\n• Accidental death of an active member or dependent, and of a field worker\n• Higher studies (PG / PhD / research in agriculture, horticulture or agri-engineering) for children of active members\n• New from 1 Apr 2023: Permanent Disability and Education Fund schemes\n• From 1 Jun 2024 - Major Hospitalization: for a single admission with expenses of Rs. 5.00 lakh or more, you can avail the least of 10% of the bill (net of discount), Rs. 1.00 lakh, or the bill amount after deducting discount, insurance or other amounts received\n\n**Active member** (from 1 Jan 2025): tendered arecanut continuously in the last 3 financial years, averaging 1 quintal a year.",
+   "l": [
+    [
+     "Member Benefit Scheme",
+     "https://campco.org/member-benefit-scheme/"
+    ]
+   ],
+   "f": [
+    "notification",
+    "complaint",
+    "sell"
+   ]
+  },
+  {
+   "id": "notification",
+   "t": "Notifications",
+   "k": [
+    "notification",
+    "notifications",
+    "erp",
+    "auditor",
+    "auditors",
+    "audit",
+    "notice",
+    "circular",
+    "services suspended",
+    "announcement",
+    "announcements",
+    "statutory auditor"
+   ],
+   "a": "**Recent member notifications**\n• 01/05/2024 - Cooperative Ombudsman created under the MSCS Act 2002 (Central Registrar order of 23 Apr 2024). Member complaints go in Form VI; appeals against the Cooperative Information Officer's orders in Form VII.\n• 20/03/2024 - ERP rollout: branch and Head Office services were suspended 26 Mar - 6 Apr 2024 and resumed 8 Apr 2024. Cocoa wet beans were still purchased, with payment after 8 Apr 2024.\n• 16/11/2023 - M/s B V C & Co, Bengaluru appointed Statutory Auditor and M/s YCRJ & Associates, Bengaluru Concurrent Auditor for 2023-24 (to be ratified by the General Body).",
+   "l": [
+    [
+     "Notifications",
+     "https://campco.org/notification/"
+    ]
+   ],
+   "f": [
+    "complaint",
+    "benefit"
+   ],
+   "live": true
+  },
+  {
+   "id": "complaint",
+   "t": "Complaints / Ombudsman",
+   "k": [
+    "complaint",
+    "complaints",
+    "grievance",
+    "ombudsman",
+    "cooperative ombudsman",
+    "form vi",
+    "form vii",
+    "rti",
+    "right to information",
+    "information officer",
+    "appeal",
+    "feedback",
+    "suggestion",
+    "suggestions"
+   ],
+   "a": "**Cooperative Ombudsman** (under the MSCS Act 2002) enquires into member complaints about deposits, equitable benefits, functioning and individual rights. File complaints in **Form VI**.\n\nIt is also the appellate authority against orders of the Cooperative Information Officer - appeals go in **Form VII**.\n\nFor general feedback and suggestions, use the Feedback page.",
+   "l": [
+    [
+     "Notifications",
+     "https://campco.org/notification/"
+    ],
+    [
+     "Feedback",
+     "https://campco.org/feedback/"
+    ]
+   ],
+   "f": [
+    "notification",
+    "contact"
+   ]
+  },
+  {
+   "id": "manure",
+   "t": "Manures & fertilizers",
+   "k": [
+    "manure",
+    "manures",
+    "fertilizer",
+    "fertiliser",
+    "fertilizers",
+    "aayush",
+    "ayush",
+    "poushtika",
+    "dolomite",
+    "copper sulphate",
+    "bordeaux",
+    "bordeaux mixture",
+    "lime",
+    "hydrated lime",
+    "shell lime",
+    "maxwett",
+    "organic manure",
+    "micronutrient",
+    "soil conditioner",
+    "wetting agent",
+    "koleroga",
+    "fungicide"
+   ],
+   "a": "**Manures and fertilizers sold by CAMPCO**\n• **AAYUSH** - complete organic manure: 12 ingredients (neem, pongamia and castor cake), composted with bio-stimulants (humic, fulvic, amino, seaweed) and bio-fertilizers. Improves soil fertility and root growth, reduces flower and nut drop. For all commercial, fruit, food and plantation crops.\n• **POUSHTIKA** - soil-application micronutrient mixture (zinc, boron, iron, manganese)\n• **Dolomite (granulated)** - calcium and magnesium; corrects soil acidity\n• **Copper Sulphate** (1 kg) - key ingredient of Bordeaux mixture; contact fungicide\n• **Hydrated Lime and Shell Lime** (1 kg) - neutralises copper sulphate, reduces phytotoxicity, improves sticking\n• **MAXWETT** (500 ml, 1000 ml) - wetting and spreading agent for Bordeaux mixture, usable with pesticides, herbicides, fungicides and insecticides",
+   "l": [
+    [
+     "Manures & Fertilizers",
+     "https://campco.org/manures-and-fertilizers/"
+    ]
+   ],
+   "f": [
+    "farmersdesk",
+    "areca",
+    "contact"
+   ]
+  },
+  {
+   "id": "farmersdesk",
+   "t": "Farmer's Desk",
+   "k": [
+    "farmers desk",
+    "farmer desk",
+    "soil testing",
+    "soil test",
+    "campco on wheels",
+    "wheels",
+    "campco circle",
+    "siddapura",
+    "weather",
+    "weather report",
+    "farmer",
+    "farmers",
+    "cocoa board",
+    "arecanut research",
+    "soil health"
+   ],
+   "a": "**Farmer's Desk**\n• **Soil Testing** - a modern machine was installed at CAMPCO Puttur branch on 11 April 2025 (pH, NPK, organic carbon, micronutrients); to be extended to other regional offices\n• **CAMPCO on Wheels** - launched in 2021 to reach farmers at their doorstep\n• **Campco Circle** - landmark inaugurated at Siddapura, Udupi, symbolising farmer empowerment\n• Useful links: Weather report, Cocoa Handbook, Cocoa Board, Arecanut Research and Development Foundation",
+   "l": [
+    [
+     "Farmer's Desk",
+     "https://campco.org/farmers-desk/"
+    ],
+    [
+     "Cocoa Handbook",
+     "https://campco.org/wp-content/uploads/2022/04/cocoa-handbook.pdf"
+    ],
+    [
+     "Cocoa Board",
+     "https://dccd.gov.in/"
+    ],
+    [
+     "ARDF",
+     "https://arecanut.org"
+    ]
+   ],
+   "f": [
+    "manure",
+    "cocoa",
+    "rnd"
+   ]
+  },
+  {
+   "id": "tender",
+   "t": "Tenders",
+   "k": [
+    "tender",
+    "tenders",
+    "bid",
+    "bidders",
+    "quotation",
+    "e tender",
+    "etender"
+   ],
+   "a": "Tenders change often and I don't hold the details, so please check the Tender page for the latest.",
+   "l": [
+    [
+     "Tenders",
+     "https://campco.org/tender/"
+    ]
+   ],
+   "f": [
+    "contact",
+    "careers"
+   ],
+   "live": true
+  },
+  {
+   "id": "election",
+   "t": "Elections",
+   "k": [
+    "election",
+    "elections",
+    "voting",
+    "vote",
+    "election details",
+    "poll",
+    "ballot",
+    "nomination"
+   ],
+   "a": "Election information is published on the Election Details page. It is updated by CAMPCO, so please check there for the latest.",
+   "l": [
+    [
+     "Election Details",
+     "https://campco.org/elections-details/"
+    ]
+   ],
+   "f": [
+    "board",
+    "notification"
+   ],
+   "live": true
+  },
+  {
+   "id": "careers",
+   "t": "Careers",
+   "k": [
+    "career",
+    "careers",
+    "job",
+    "jobs",
+    "vacancy",
+    "vacancies",
+    "hiring",
+    "recruitment",
+    "apply",
+    "work with you",
+    "opening",
+    "openings",
+    "employment",
+    "work at campco"
+   ],
+   "a": "There are currently no open positions. The Careers page is updated whenever new opportunities come up.",
+   "l": [
+    [
+     "Careers",
+     "https://campco.org/careers/"
+    ]
+   ],
+   "f": [
+    "contact",
+    "news"
+   ],
+   "live": true
+  },
+  {
+   "id": "news",
+   "t": "Latest news",
+   "k": [
+    "news",
+    "latest news",
+    "events",
+    "whats new",
+    "recent",
+    "foundation day",
+    "lakhera",
+    "amit shah",
+    "sitharaman",
+    "delegation",
+    "press",
+    "updates",
+    "happening"
+   ],
+   "a": "**Latest news**\n• 9 Aug 2026 - Lt Gen Vikas Lakhera, AVSM, SM visits the CAMPCO Chocolate Factory\n• 1 Aug 2026 - CAMPCO delegation meets Union Ministers Amit Shah and Nirmala Sitharaman in New Delhi\n• 13 Jul 2026 - CAMPCO marks Foundation Day, celebrating its 5-decade co-op journey",
+   "l": [
+    [
+     "All news",
+     "https://campco.org/news/"
+    ]
+   ],
+   "f": [
+    "about",
+    "careers"
+   ],
+   "live": true
+  },
+  {
+   "id": "shop",
+   "t": "Buy chocolates online",
+   "k": [
+    "shop",
+    "buy",
+    "order",
+    "online",
+    "campco cart",
+    "cart",
+    "purchase",
+    "chocolates",
+    "chocolate",
+    "buy chocolate",
+    "delivery",
+    "free delivery",
+    "shipping",
+    "best seller",
+    "best sellers",
+    "price",
+    "prices",
+    "eclairs",
+    "gift box",
+    "drinking chocolate",
+    "mouth freshener",
+    "saugandh",
+    "choco treats",
+    "premium chocolates",
+    "cooking chocolate",
+    "campco bites",
+    "gift",
+    "sweets",
+    "toffee"
+   ],
+   "a": "You can buy online at **CAMPCO Cart**.\n• Free delivery on orders over Rs. 200; delivery in 2 to 3 days\n• Categories: Choco Treats, Drinking Chocolate, Gift Box, Mouth Freshener, Oil, Premium Chocolates, Cooking Chocolates, Spices, Eclairs\n• Sample listings: Kala Sona Rs. 45, Campo Orange Eclairs Rs. 150, Campco Calpa from Rs. 218\n\nPrices and stock change (some items showed \"sold out\" when captured), so please confirm on the shop. Shop help: +91 90355 68442.",
+   "l": [
+    [
+     "Shop Now",
+     "https://campcocart.com/"
+    ],
+    [
+     "Chocolates",
+     "https://campcocart.com/collections/chocolates"
+    ]
+   ],
+   "f": [
+    "recipes",
+    "industrial",
+    "distributor"
+   ],
+   "live": true
+  },
+  {
+   "id": "industrial",
+   "t": "Industrial products",
+   "k": [
+    "industrial",
+    "industrial product",
+    "industrial products",
+    "bulk",
+    "compound chocolate",
+    "couverture",
+    "chips",
+    "choco paste",
+    "spreads",
+    "cocoa mass",
+    "cocoa butter",
+    "baker",
+    "bakery",
+    "ice cream",
+    "raw material",
+    "b2b",
+    "wholesale",
+    "bulk order",
+    "ingredients",
+    "chocolate chips"
+   ],
+   "a": "**CAMPCO Industrial Products** are chocolate and cocoa ingredients for bakers, ice-cream makers and food manufacturers:\n• **Compound chocolates** - baker's chocolate (sugar, vegetable fat, cocoa powder) for cakes, pancakes, cookies\n• **Couverture** - high cocoa butter; dark, milk and white; for professional bakers and ice cream\n• **Cocoa powder** - for drinking chocolate, syrups, cream fillings\n• **Cocoa mass and cocoa butter** - main ingredients for chocolate, ice cream, biscuits, sweets\n• **Chocolate and compound chips** - for cookies, waffles, cakes, muffins, hot chocolate, pastries\n• **Choco paste, spreads, dips and fillings** - for toast, bread, pastries\n\nUse the enquiry form for bulk requirements.",
+   "l": [
+    [
+     "Industrial Products",
+     "https://campcocart.com/pages/industrial-products"
+    ],
+    [
+     "Enquiry Form",
+     "https://campcocart.com/pages/industrial-product-form"
+    ]
+   ],
+   "f": [
+    "factory",
+    "distributor",
+    "contact"
+   ]
+  },
+  {
+   "id": "distributor",
+   "t": "Distributor / sales offices",
+   "k": [
+    "distributor",
+    "become a distributor",
+    "dealer",
+    "sales office",
+    "sales offices",
+    "locate sales",
+    "franchise",
+    "retail",
+    "stockist",
+    "where to buy",
+    "shop near me",
+    "distribution"
+   ],
+   "a": "To become a CAMPCO chocolate distributor, or to find a sales office, use the pages below.",
+   "l": [
+    [
+     "Become a Distributor",
+     "https://campcocart.com/pages/distributor"
+    ],
+    [
+     "Sales Offices",
+     "https://campcocart.com/pages/locate-sales-offices"
+    ]
+   ],
+   "f": [
+    "shop",
+    "industrial",
+    "contact"
+   ]
+  },
+  {
+   "id": "recipes",
+   "t": "Chocolate recipes",
+   "k": [
+    "recipe",
+    "recipes",
+    "blog",
+    "kitchen",
+    "cook",
+    "cooking",
+    "kesari bath",
+    "papaya halwa",
+    "banana cake",
+    "laddoo",
+    "samosa",
+    "peanut butter",
+    "dessert"
+   ],
+   "a": "CAMPCO's kitchen blog has chocolate recipes such as:\n• Choco Kesari Bath\n• Choco Papaya Halwa\n• Choco Eggless Banana Cake\n• Choco Coconut Laddoo\n• Chocolate Frozen Banana\n• Samosa with Chocolate Filling\n• Giant Peanut Butter Cup",
+   "l": [
+    [
+     "Recipes",
+     "https://campcocart.com/blogs/recipes"
+    ]
+   ],
+   "f": [
+    "shop",
+    "industrial"
+   ]
+  },
+  {
+   "id": "social",
+   "t": "Social media",
+   "k": [
+    "facebook",
+    "instagram",
+    "youtube",
+    "twitter",
+    "social media",
+    "linkedin",
+    "pinterest",
+    "follow",
+    "x handle",
+    "social"
+   ],
+   "a": "Follow Campco Chocolates on Facebook, Instagram, YouTube, Twitter/X, Pinterest and LinkedIn (search \"campcochocolatesindia\").",
+   "l": [
+    [
+     "Facebook",
+     "https://www.facebook.com/campcochocolatesindia/"
+    ],
+    [
+     "Instagram",
+     "https://www.instagram.com/campcochocolatesindia"
+    ],
+    [
+     "YouTube",
+     "https://www.youtube.com/@CampcoChocolatesIndia"
+    ]
+   ],
+   "f": [
+    "shop",
+    "recipes"
+   ]
+  },
+  {
+   "id": "help",
+   "t": "What can you do?",
+   "k": [
+    "help",
+    "what can you do",
+    "what can i ask",
+    "menu",
+    "options",
+    "topics",
+    "how to use",
+    "who made you",
+    "are you a bot",
+    "are you human",
+    "are you real"
+   ],
+   "a": "I'm the CAMPCO website assistant - an automated bot that answers from CAMPCO's published information. Ask me about:\n• Products: arecanut, cocoa, pepper, rubber, coconut\n• Member benefits, notifications and complaints\n• Directors, management and past presidents / MDs (try \"who was MD in 1995?\")\n• The Puttur chocolate factory, certifications and green energy\n• The online chocolate shop, industrial products and manures\n\nFor anything I can't answer, I'll point you to the right page or contact.",
+   "l": [],
+   "f": [
+    "products",
+    "benefit",
+    "shop"
+   ]
+  }
+ ]
+}

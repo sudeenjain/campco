@@ -1,5 +1,5 @@
 {
- "_readme": "Chat enquiry forms. Each field: key, label (en/kn), type (text|phone|email|choice|longtext), required, choices. triggers are phrases that open the form directly. kbActions maps a knowledge-base id to buttons shown under its answer.",
+ "_readme": "Chat enquiry forms. Each field: key, label (en/kn), type (text|phone|email|choice|longtext), required, choices. triggers are phrases that open the form directly. kbActions maps a knowledge-base id to buttons shown under its answer. guides = 'ask me' flows: each node has a question (q) and tap-to-answer options (opts). An option's 'to' is a chip payload: '#guide:<node>' (next question), '#<kb id>', '#form:<id>', '#products-live', or plain text that is asked like a typed question. 'back' = node to return to.",
  "forms": {
   "callback": {
    "title": {
@@ -334,5 +334,285 @@
     "#products-live"
    ]
   ]
+ },
+ "guides": {
+  "root": {
+   "q": {
+    "en": "Tell me who you are and I'll point you to the right place:",
+    "kn": "ನೀವು ಯಾರು ಎಂದು ತಿಳಿಸಿ, ಸರಿಯಾದ ಮಾಹಿತಿಗೆ ಕರೆದೊಯ್ಯುತ್ತೇನೆ:"
+   },
+   "opts": [
+    {
+     "i": "🌱",
+     "en": "I'm a farmer / grower",
+     "kn": "ನಾನು ರೈತ / ಬೆಳೆಗಾರ",
+     "to": "#guide:farmer"
+    },
+    {
+     "i": "🍫",
+     "en": "I want to buy chocolates",
+     "kn": "ನಾನು ಚಾಕೊಲೇಟ್ ಖರೀದಿಸಲು ಬಯಸುತ್ತೇನೆ",
+     "to": "#guide:buyer"
+    },
+    {
+     "i": "🏭",
+     "en": "I'm a business / bulk buyer",
+     "kn": "ನಾನು ವ್ಯಾಪಾರಿ / ಬಲ್ಕ್ ಖರೀದಿದಾರ",
+     "to": "#guide:business"
+    },
+    {
+     "i": "💼",
+     "en": "I'm looking for a job",
+     "kn": "ನಾನು ಉದ್ಯೋಗ ಹುಡುಕುತ್ತಿದ್ದೇನೆ",
+     "to": "#careers"
+    },
+    {
+     "i": "🏛",
+     "en": "I want to know about CAMPCO",
+     "kn": "ನಾನು ಕ್ಯಾಂಪ್ಕೊ ಬಗ್ಗೆ ತಿಳಿಯಲು ಬಯಸುತ್ತೇನೆ",
+     "to": "#guide:learn"
+    }
+   ]
+  },
+  "farmer": {
+   "back": "#guide:root",
+   "q": {
+    "en": "What do you need help with?",
+    "kn": "ನಿಮಗೆ ಯಾವುದರಲ್ಲಿ ಸಹಾಯ ಬೇಕು?"
+   },
+   "opts": [
+    {
+     "i": "💰",
+     "en": "Today's rates",
+     "kn": "ಇಂದಿನ ದರಗಳು",
+     "to": "#guide:rate"
+    },
+    {
+     "i": "🧺",
+     "en": "Sell my produce / become a member",
+     "kn": "ನನ್ನ ಬೆಳೆ ಮಾರಾಟ / ಸದಸ್ಯರಾಗುವುದು",
+     "to": "#sell"
+    },
+    {
+     "i": "🎁",
+     "en": "Member benefits",
+     "kn": "ಸದಸ್ಯ ಸೌಲಭ್ಯಗಳು",
+     "to": "#benefit"
+    },
+    {
+     "i": "🌾",
+     "en": "Fertilizers & farmer's desk",
+     "kn": "ಗೊಬ್ಬರ ಮತ್ತು ರೈತರ ಸಹಾಯ ಕೇಂದ್ರ",
+     "to": "#manure"
+    },
+    {
+     "i": "📍",
+     "en": "Nearest branch",
+     "kn": "ಹತ್ತಿರದ ಶಾಖೆ",
+     "to": "#branchloc"
+    },
+    {
+     "i": "🌴",
+     "en": "Learn about a crop",
+     "kn": "ಒಂದು ಬೆಳೆಯ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ",
+     "to": "#guide:crop"
+    }
+   ]
+  },
+  "crop": {
+   "back": "#guide:farmer",
+   "q": {
+    "en": "Which crop?",
+    "kn": "ಯಾವ ಬೆಳೆ?"
+   },
+   "opts": [
+    {
+     "i": "🌰",
+     "en": "Arecanut",
+     "kn": "ಅಡಿಕೆ",
+     "to": "#areca"
+    },
+    {
+     "i": "🍫",
+     "en": "Cocoa",
+     "kn": "ಕೋಕೋ",
+     "to": "#cocoa"
+    },
+    {
+     "i": "🌶",
+     "en": "Pepper",
+     "kn": "ಕಾಳುಮೆಣಸು",
+     "to": "#pepper"
+    },
+    {
+     "i": "🌳",
+     "en": "Rubber",
+     "kn": "ರಬ್ಬರ್",
+     "to": "#rubber"
+    },
+    {
+     "i": "🥥",
+     "en": "Coconut / copra",
+     "kn": "ತೆಂಗು / ಕೊಬ್ಬರಿ",
+     "to": "#coconut"
+    }
+   ]
+  },
+  "rate": {
+   "back": "#guide:farmer",
+   "q": {
+    "en": "Which crop's rate do you want?",
+    "kn": "ಯಾವ ಬೆಳೆಯ ದರ ಬೇಕು?"
+   },
+   "opts": [
+    {
+     "i": "🌰",
+     "en": "Arecanut",
+     "kn": "ಅಡಿಕೆ",
+     "to": "areca price"
+    },
+    {
+     "i": "🍫",
+     "en": "Cocoa",
+     "kn": "ಕೋಕೋ",
+     "to": "cocoa price"
+    },
+    {
+     "i": "🌶",
+     "en": "Pepper",
+     "kn": "ಕಾಳುಮೆಣಸು",
+     "to": "pepper price"
+    },
+    {
+     "i": "🌳",
+     "en": "Rubber",
+     "kn": "ರಬ್ಬರ್",
+     "to": "rubber price"
+    },
+    {
+     "i": "🥥",
+     "en": "Coconut / copra",
+     "kn": "ತೆಂಗು / ಕೊಬ್ಬರಿ",
+     "to": "coconut price"
+    }
+   ]
+  },
+  "buyer": {
+   "back": "#guide:root",
+   "q": {
+    "en": "What would you like to do?",
+    "kn": "ನೀವು ಏನು ಮಾಡಲು ಬಯಸುತ್ತೀರಿ?"
+   },
+   "opts": [
+    {
+     "i": "🛒",
+     "en": "Shop online (CAMPCO Cart)",
+     "kn": "ಆನ್‌ಲೈನ್ ಖರೀದಿ (ಕ್ಯಾಂಪ್ಕೊ ಕಾರ್ಟ್)",
+     "to": "#shop"
+    },
+    {
+     "i": "🏷",
+     "en": "See products with prices",
+     "kn": "ಬೆಲೆಯೊಂದಿಗೆ ಉತ್ಪನ್ನಗಳು",
+     "to": "#products-live"
+    },
+    {
+     "i": "🏭",
+     "en": "Visit the chocolate factory",
+     "kn": "ಚಾಕೊಲೇಟ್ ಕಾರ್ಖಾನೆ ಭೇಟಿ",
+     "to": "#visit"
+    },
+    {
+     "i": "🍰",
+     "en": "Recipes",
+     "kn": "ರೆಸಿಪಿಗಳು",
+     "to": "#recipes"
+    },
+    {
+     "i": "📞",
+     "en": "Contact CAMPCO",
+     "kn": "ಕ್ಯಾಂಪ್ಕೊ ಸಂಪರ್ಕ",
+     "to": "#contact"
+    }
+   ]
+  },
+  "business": {
+   "back": "#guide:root",
+   "q": {
+    "en": "What do you need?",
+    "kn": "ನಿಮಗೆ ಏನು ಬೇಕು?"
+   },
+   "opts": [
+    {
+     "i": "📦",
+     "en": "Bulk / industrial products",
+     "kn": "ಬಲ್ಕ್ / ಕೈಗಾರಿಕಾ ಉತ್ಪನ್ನಗಳು",
+     "to": "#industrial"
+    },
+    {
+     "i": "📝",
+     "en": "Send a bulk enquiry",
+     "kn": "ಬಲ್ಕ್ ವಿಚಾರಣೆ ಕಳುಹಿಸಿ",
+     "to": "#form:bulk"
+    },
+    {
+     "i": "🚚",
+     "en": "Become a distributor",
+     "kn": "ವಿತರಕರಾಗಿ",
+     "to": "#distributor"
+    },
+    {
+     "i": "📄",
+     "en": "Tenders",
+     "kn": "ಟೆಂಡರ್‌ಗಳು",
+     "to": "#tender"
+    },
+    {
+     "i": "☎",
+     "en": "Request a callback",
+     "kn": "ಕರೆ ಮಾಡಲು ವಿನಂತಿ",
+     "to": "#form:callback"
+    }
+   ]
+  },
+  "learn": {
+   "back": "#guide:root",
+   "q": {
+    "en": "What would you like to know?",
+    "kn": "ನೀವು ಏನು ತಿಳಿಯಲು ಬಯಸುತ್ತೀರಿ?"
+   },
+   "opts": [
+    {
+     "i": "ℹ",
+     "en": "About CAMPCO",
+     "kn": "ಕ್ಯಾಂಪ್ಕೊ ಬಗ್ಗೆ",
+     "to": "#about"
+    },
+    {
+     "i": "👥",
+     "en": "Directors & management",
+     "kn": "ನಿರ್ದೇಶಕರು ಮತ್ತು ನಿರ್ವಹಣೆ",
+     "to": "#board"
+    },
+    {
+     "i": "🏆",
+     "en": "Awards & certifications",
+     "kn": "ಪ್ರಶಸ್ತಿ ಮತ್ತು ಪ್ರಮಾಣಪತ್ರ",
+     "to": "#awards"
+    },
+    {
+     "i": "📰",
+     "en": "Latest news",
+     "kn": "ಇತ್ತೀಚಿನ ಸುದ್ದಿ",
+     "to": "#news"
+    },
+    {
+     "i": "🌐",
+     "en": "Social media",
+     "kn": "ಸಾಮಾಜಿಕ ಜಾಲತಾಣ",
+     "to": "#social"
+    }
+   ]
+  }
  }
 }

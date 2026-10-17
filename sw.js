@@ -1,7 +1,7 @@
 /* Campco chatbot - service worker: page + chatbot keep working with no internet after the first visit.
    Keep this file next to index.html (same folder). Serve over https:// or http://localhost.
    BUMP the CACHE name whenever you change chatbot.js, chatbot-engine.js or data/*.json structure. */
-var CACHE = 'campco-bot-v5';
+var CACHE = 'campco-bot-v6';
 var CORE = ['./', 'index.html', 'chatbot.js', 'chatbot-engine.js', 'data/bundle.js',
   'data/kb.json', 'data/people.json', 'data/kn.json', 'data/synonyms.json', 'data/forms.json',
   'data/news.json', 'data/rates.json', 'data/jobs.json', 'data/products.json'];

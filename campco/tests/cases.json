@@ -1,0 +1,604 @@
+{
+ "single": [
+  [
+   "what is campco",
+   "about"
+  ],
+  [
+   "when was campco founded",
+   "about"
+  ],
+  [
+   "who founded campco",
+   "founder"
+  ],
+  [
+   "how many members",
+   "stats"
+  ],
+  [
+   "phone number",
+   "contact"
+  ],
+  [
+   "head office address",
+   "contact"
+  ],
+  [
+   "nearest branch",
+   "branchloc"
+  ],
+  [
+   "arecanut",
+   "areca"
+  ],
+  [
+   "tell me about cocoa",
+   "cocoa"
+  ],
+  [
+   "black pepper",
+   "pepper"
+  ],
+  [
+   "rubber",
+   "rubber"
+  ],
+  [
+   "copra",
+   "coconut"
+  ],
+  [
+   "calpa oil",
+   "coconut"
+  ],
+  [
+   "areca rate today",
+   "rates"
+  ],
+  [
+   "cocoa price",
+   "rates"
+  ],
+  [
+   "how to sell my arecanut",
+   "sell"
+  ],
+  [
+   "how to become a member",
+   "sell"
+  ],
+  [
+   "chocolate factory",
+   "factory"
+  ],
+  [
+   "can i visit the factory",
+   "visit"
+  ],
+  [
+   "iso certification",
+   "cert"
+  ],
+  [
+   "crisil rating",
+   "rating"
+  ],
+  [
+   "windmill",
+   "green"
+  ],
+  [
+   "effluent treatment plant",
+   "etp"
+  ],
+  [
+   "awards",
+   "awards"
+  ],
+  [
+   "who is the md",
+   "md"
+  ],
+  [
+   "board of directors",
+   "board"
+  ],
+  [
+   "management team",
+   "management"
+  ],
+  [
+   "former managing directors",
+   "formermd"
+  ],
+  [
+   "list of presidents",
+   "formerpres"
+  ],
+  [
+   "member benefit scheme",
+   "benefit"
+  ],
+  [
+   "ombudsman",
+   "complaint"
+  ],
+  [
+   "notifications",
+   "notification"
+  ],
+  [
+   "fertilizers",
+   "manure"
+  ],
+  [
+   "soil testing",
+   "farmersdesk"
+  ],
+  [
+   "tenders",
+   "tender"
+  ],
+  [
+   "elections",
+   "election"
+  ],
+  [
+   "careers",
+   "careers"
+  ],
+  [
+   "latest news",
+   "news"
+  ],
+  [
+   "buy chocolates online",
+   "shop"
+  ],
+  [
+   "bulk compound chocolate",
+   "industrial"
+  ],
+  [
+   "distributor",
+   "distributor"
+  ],
+  [
+   "recipes",
+   "recipes"
+  ],
+  [
+   "instagram",
+   "social"
+  ],
+  [
+   "help",
+   "help"
+  ],
+  [
+   "arecanuts",
+   "areca"
+  ],
+  [
+   "choclate factory",
+   "factory"
+  ],
+  [
+   "cetification",
+   "cert"
+  ],
+  [
+   "who is satishchandra",
+   "president"
+  ],
+  [
+   "who is the current president",
+   "president"
+  ],
+  [
+   "copper sulphate",
+   "manure"
+  ],
+  [
+   "training programmes",
+   "skill"
+  ],
+  [
+   "adike dhara eshtu",
+   "rates"
+  ],
+  [
+   "adike bele",
+   "rates"
+  ],
+  [
+   "ಅಡಿಕೆ ದರ ಎಷ್ಟು",
+   "rates"
+  ],
+  [
+   "ಅಧ್ಯಕ್ಷರು ಯಾರು",
+   "president"
+  ],
+  [
+   "ಸಂಪರ್ಕ ಸಂಖ್ಯೆ",
+   "contact"
+  ],
+  [
+   "kokko bagge",
+   "cocoa"
+  ],
+  [
+   "ಕಾಳುಮೆಣಸು",
+   "pepper"
+  ],
+  [
+   "adike maralu hege",
+   "sell"
+  ],
+  [
+   "sadasya soukarya",
+   "benefit"
+  ],
+  [
+   "gobbara",
+   "manure"
+  ],
+  [
+   "ಚಾಕೊಲೇಟ್ ಖರೀದಿ",
+   "shop"
+  ],
+  [
+   "udyoga",
+   "careers"
+  ],
+  [
+   "ಇತ್ತೀಚಿನ ಸುದ್ದಿ",
+   "news"
+  ],
+  [
+   "ಅಡಿಕೆಯ ಬಗ್ಗೆ ಹೇಳಿ",
+   "areca"
+  ],
+  [
+   "ಕಾರ್ಖಾನೆ ಭೇಟಿ",
+   "visit"
+  ],
+  [
+   "ಸದಸ್ಯ ಸೌಲಭ್ಯಗಳು",
+   "benefit"
+  ],
+  [
+   "hello",
+   "greet"
+  ],
+  [
+   "thanks",
+   "thanks"
+  ],
+  [
+   "ನಮಸ್ಕಾರ",
+   "greet"
+  ],
+  [
+   "call me back",
+   "form:callback"
+  ],
+  [
+   "distributor enquiry",
+   "form:distributor"
+  ],
+  [
+   "book a visit",
+   "form:visit"
+  ],
+  [
+   "bulk enquiry",
+   "form:bulk"
+  ],
+  [
+   "#form:callback",
+   "form:callback"
+  ],
+  [
+   "talk to a human",
+   "handoff"
+  ],
+  [
+   "i want to speak to someone",
+   "handoff"
+  ],
+  [
+   "show products",
+   "products"
+  ],
+  [
+   "show chocolates",
+   "products"
+  ],
+  [
+   "who was md in 1995",
+   "year"
+  ],
+  [
+   "president in 1985",
+   "year"
+  ],
+  [
+   "asdfgh qwerty",
+   "fallback"
+  ],
+  [
+   "ಅಡಿಕೆ ಎಂದರೆ ಎಷ್ಟು",
+   "rates"
+  ],
+  [
+   "Aditya Narayan",
+   "fallback"
+  ],
+  [
+   "Aditya Narayan Store",
+   "fallback"
+  ],
+  [
+   "ಕ್ಯಾಂಪ್ಕೋ ಕಂಪನಿಯ ಬಗ್ಗೆ",
+   "about"
+  ],
+  [
+   "ಊಟ ಆಯ್ತಾ",
+   "greet"
+  ],
+  [
+   "ಚಾಕೋಲೇಟ್ ಬಗ್ಗೆ",
+   "shop"
+  ],
+  [
+   "ಚಾಕಲೇಟ್",
+   "shop"
+  ],
+  [
+   "ಇಂಡಸ್ಟ್ರಿಯಲ್ ಪ್ರಾಡಕ್ಟ್ಸ್",
+   "industrial"
+  ],
+  [
+   "ಕ್ಯಾಂಪ್ಕೋ ಚಾಕ್ಲೇಟ್ ಗಳ ವಿವರ",
+   "shop"
+  ],
+  [
+   "ಚಾಕೊಲೇಟ್‌ಗಳ ಮಾಹಿತಿ",
+   "shop"
+  ],
+  [
+   "ಕಂಟ್ಯಾಕ್ಟ್ ನಂಬರ್",
+   "contact"
+  ],
+  [
+   "ಡೈರೆಕ್ಟರ್ಸ್",
+   "board"
+  ],
+  [
+   "ಕೋಕೋ ಬೆಲೆ",
+   "rates"
+  ],
+  [
+   "ಕೋಕೊ ಬಗ್ಗೆ ಹೇಳಿ",
+   "cocoa"
+  ],
+  [
+   "ಪ್ರೆಸಿಡೆಂಟ್ ಯಾರು",
+   "president"
+  ],
+  [
+   "ಕ್ಯಾಂಪ್ಕೋ ಎಂದರೇನು",
+   "about"
+  ],
+  [
+   "ಹೇಗಿದ್ದೀರಾ",
+   "greet"
+  ],
+  [
+   "ಫ್ಯಾಕ್ಟರಿ ವಿಸಿಟ್",
+   "visit"
+  ],
+  [
+   "ಜಾಬ್ಸ್",
+   "careers"
+  ],
+  [
+   "ಆನ್‌ಲೈನ್ ಶಾಪ್",
+   "shop"
+  ],
+  [
+   "ಬ್ರಾಂಚ್ ಅಡ್ರೆಸ್",
+   "branchloc"
+  ],
+  [
+   "ಅಧ್ಯಕ್ಷರು ಯಾರು",
+   "president"
+  ],
+  [
+   "ಕ್ಯಾಂಪ್ಕೊ ಚಾಕೊಲೇಟ್",
+   "shop"
+  ],
+  [
+   "campco chocolates",
+   "shop"
+  ]
+ ],
+ "multi": [
+  [
+   "areca and cocoa",
+   [
+    "areca",
+    "cocoa"
+   ]
+  ],
+  [
+   "tell me about pepper and cocoa",
+   [
+    "pepper",
+    "cocoa"
+   ]
+  ],
+  [
+   "member benefits and complaints",
+   [
+    "benefit",
+    "complaint"
+   ]
+  ],
+  [
+   "board of directors and careers",
+   [
+    "board",
+    "careers"
+   ]
+  ]
+ ],
+ "notMulti": [
+  [
+   "chocolates and eclairs"
+  ],
+  [
+   "terms and conditions"
+  ],
+  [
+   "pepper and spice toffee"
+  ]
+ ],
+ "seq": [
+  {
+   "name": "president then predecessor",
+   "steps": [
+    [
+     "who is the president",
+     "president"
+    ],
+    [
+     "who was before him",
+     "year",
+     "Kodgi"
+    ]
+   ]
+  },
+  {
+   "name": "md then predecessor",
+   "steps": [
+    [
+     "who is the md",
+     "md"
+    ],
+    [
+     "who was before him",
+     "year",
+     "Krishna Kumar"
+    ]
+   ]
+  },
+  {
+   "name": "year then other role",
+   "steps": [
+    [
+     "who was md in 1995",
+     "year",
+     "Pramod Kumar Rai"
+    ],
+    [
+     "and president?",
+     "year",
+     "K. Rama Bhat"
+    ]
+   ]
+  },
+  {
+   "name": "year carry with new year",
+   "steps": [
+    [
+     "who was president in 1985",
+     "year",
+     "Varanashi"
+    ],
+    [
+     "and in 2005?",
+     "year",
+     "President in 2005"
+    ]
+   ]
+  },
+  {
+   "name": "successor",
+   "steps": [
+    [
+     "who was president in 1985",
+     "year"
+    ],
+    [
+     "who came after him",
+     "year",
+     "K. Rama Bhat"
+    ]
+   ]
+  },
+  {
+   "name": "no stale year carry",
+   "steps": [
+    [
+     "who was md in 1995",
+     "year"
+    ],
+    [
+     "who is the president",
+     "president"
+    ]
+   ]
+  },
+  {
+   "name": "commodity price pronoun",
+   "steps": [
+    [
+     "tell me about areca",
+     "areca"
+    ],
+    [
+     "and its price?",
+     "rates"
+    ]
+   ]
+  },
+  {
+   "name": "rates then another commodity",
+   "steps": [
+    [
+     "arecanut price",
+     "rates"
+    ],
+    [
+     "and cocoa?",
+     "rates"
+    ]
+   ]
+  },
+  {
+   "name": "topic change drops commodity carry",
+   "steps": [
+    [
+     "tell me about areca",
+     "areca"
+    ],
+    [
+     "who is the md",
+     "md"
+    ]
+   ]
+  },
+  {
+   "name": "before without context is not navigation",
+   "steps": [
+    [
+     "previous presidents",
+     "formerpres"
+    ]
+   ]
+  }
+ ]
+}

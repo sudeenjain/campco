@@ -124,6 +124,35 @@ cases.seq.forEach(function (s) {
   check('robust: ' + JSON.stringify(q.slice(0, 20)), ok);
 });
 
+/* 10. "ask me" guides (tap-to-answer questions) */
+(function () {
+  var r = eng.reply('#guide:root', eng.newCtx(), {});
+  check('guide root returns question + options', r.id === 'guide' && r.choices.length >= 4 && r.text.length > 10, JSON.stringify(r).slice(0, 80));
+  var kn = eng.reply('#guide:root', eng.newCtx(), { lang: 'kn' });
+  check('guide root in Kannada', /[ಀ-೿]/.test(kn.text) && kn.choices.every(function (c) { return /[ಀ-೿]/.test(c.label); }));
+  var seen = {};
+  (function walk(key) {
+    if (seen[key]) return; seen[key] = 1;
+    var g = eng.reply('#guide:' + key, eng.newCtx(), {});
+    g.choices.forEach(function (c) {
+      var to = c.to;
+      if (to.indexOf('#guide:') === 0) { walk(to.slice(7)); return; }
+      var a = eng.reply(to, eng.newCtx(), {});
+      check('guide ' + key + ' / ' + c.label + ' answers (' + to + ')', a.id !== 'fallback' && a.id !== 'clarify' && typeof a.text === 'string' && a.text.length > 5, 'got ' + a.id);
+    });
+  })('root');
+  check('every guide node reachable from root', Object.keys(eng.guides).every(function (k) { return seen[k]; }), Object.keys(eng.guides).filter(function (k) { return !seen[k]; }).join(','));
+  var v = eng.reply('rate', eng.newCtx(), {});
+  check('vague "rate" asks which crop', v.id === 'guide' && v.guide === 'rate', v.id);
+  v = eng.reply('today rate', eng.newCtx(), {});
+  check('"today rate" asks which crop', v.id === 'guide' && v.guide === 'rate', v.id);
+  var c = eng.newCtx(); eng.reply('arecanut price', c, {}); v = eng.reply('rate', c, {});
+  check('rate with commodity in context does not re-ask', v.id !== 'guide', v.id);
+  var f = eng.reply('zzzz xxxx', eng.newCtx(), {});
+  check('fallback offers Help me choose', f.chips.some(function (ch) { return ch[1] === '#guide:root'; }));
+  check('missing guide key is safe', typeof eng.reply('#guide:nope', eng.newCtx(), {}).text === 'string');
+})();
+
 console.log(pass + ' passed, ' + fail + ' failed');
 failures.forEach(function (f) { console.log('  FAIL: ' + f); });
 process.exit(fail ? 1 : 0);

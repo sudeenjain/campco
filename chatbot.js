@@ -51,7 +51,7 @@
       call: 'Call', whatsapp: 'WhatsApp', email: 'Email', callbackBtn: 'Request a callback',
       liveFromShop: 'Live from CAMPCO Cart', snapshot: 'Saved list from', soldOut: 'Sold out', view: 'View', noProducts: 'Could not load products. Please open the shop directly.',
       noMatch: 'No exact match - here are some popular items:', loading: 'Loading...', loadFail: 'The assistant could not load its information. Please call:',
-      enquirySubject: 'Enquiry from website chat', waHello: 'Hello CAMPCO, I need help.', waLast: 'My questions:'
+      back: 'Back', chooseForMe: 'Help me choose', enquirySubject: 'Enquiry from website chat', waHello: 'Hello CAMPCO, I need help.', waLast: 'My questions:'
     },
     kn: {
       title: 'ಕ್ಯಾಂಪ್ಕೊ ಸಹಾಯಕ',
@@ -87,7 +87,7 @@
       noProducts: 'ಉತ್ಪನ್ನಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗಲಿಲ್ಲ. ಅಂಗಡಿಯನ್ನು ನೇರವಾಗಿ ನೋಡಿ.',
       noMatch: 'ನೇರ ಹೊಂದಿಕೆಯಾಗಲಿಲ್ಲ - ಜನಪ್ರಿಯ ಉತ್ಪನ್ನಗಳು ಇಲ್ಲಿವೆ:',
       loading: 'ಲೋಡ್ ಆಗುತ್ತಿದೆ...', loadFail: 'ಮಾಹಿತಿ ಲೋಡ್ ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಕರೆ ಮಾಡಿ:',
-      enquirySubject: 'ವೆಬ್ಸೈಟ್ ಚಾಟ್ ವಿಚಾರಣೆ', waHello: 'ನಮಸ್ಕಾರ ಕ್ಯಾಂಪ್ಕೊ, ನನಗೆ ಸಹಾಯ ಬೇಕು.', waLast: 'ನನ್ನ ಪ್ರಶ್ನೆಗಳು:'
+      back: 'ಹಿಂದೆ', chooseForMe: 'ನನಗೆ ಆರಿಸಲು ಸಹಾಯ ಮಾಡಿ', enquirySubject: 'ವೆಬ್ಸೈಟ್ ಚಾಟ್ ವಿಚಾರಣೆ', waHello: 'ನಮಸ್ಕಾರ ಕ್ಯಾಂಪ್ಕೊ, ನನಗೆ ಸಹಾಯ ಬೇಕು.', waLast: 'ನನ್ನ ಪ್ರಶ್ನೆಗಳು:'
     }
   };
 
@@ -163,27 +163,37 @@
   function initUI() {
     var G = GREEN;
     var css = '\
-#cc-launcher,#cc-panel,#cc-nudge{--cc-bg:#fff;--cc-bg2:#f6f6f6;--cc-fg:#222;--cc-muted:#777;--cc-line:#e3e3e3;--cc-chip:#cfcfcf;--cc-bot:#fff;--cc-live-bg:#fff4dc;--cc-live-fg:#8a5a00}\
-#cc-launcher.cc-dark,#cc-panel.cc-dark,#cc-nudge.cc-dark{--cc-bg:#1d211d;--cc-bg2:#141714;--cc-fg:#ececec;--cc-muted:#a0a8a0;--cc-line:#333a33;--cc-chip:#4a524a;--cc-bot:#262b26;--cc-live-bg:#3a2f12;--cc-live-fg:#f1c66b}\
+#cc-launcher,#cc-panel,#cc-nudge{--cc-bg:#fff;--cc-bg2:#f6f6f6;--cc-fg:#222;--cc-muted:#777;--cc-line:#e3e3e3;--cc-chip:#cfcfcf;--cc-bot:#fff;--cc-live-bg:#fff4dc;--cc-live-fg:#8a5a00;--cc-tint:#eaf4ea}\
+#cc-launcher.cc-dark,#cc-panel.cc-dark,#cc-nudge.cc-dark{--cc-bg:#1d211d;--cc-bg2:#141714;--cc-fg:#ececec;--cc-muted:#a0a8a0;--cc-line:#333a33;--cc-chip:#4a524a;--cc-bot:#262b26;--cc-live-bg:#3a2f12;--cc-live-fg:#f1c66b;--cc-tint:#2c372c}\
 #cc-launcher{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:' + G + ';color:#fff;border:0;font-size:26px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:99999;transition:transform .2s}\
 #cc-launcher:hover{transform:scale(1.07)}\
+#cc-launcher::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid ' + G + ';animation:cc-ring 2.4s ease-out infinite;pointer-events:none}\
+#cc-launcher.cc-seen::before{display:none}\
+@keyframes cc-ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.65);opacity:0}}\
 #cc-launcher:focus-visible,#cc-panel button:focus-visible,#cc-panel a:focus-visible,#cc-panel input:focus-visible,#cc-panel select:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}\
 #cc-nudge{position:fixed;right:90px;bottom:30px;max-width:220px;background:var(--cc-bg);color:var(--cc-fg);border-radius:12px;padding:10px 28px 10px 12px;font:14px/1.4 Karla,Arial,sans-serif;box-shadow:0 4px 18px rgba(0,0,0,.2);z-index:99998;cursor:pointer;display:none}\
 #cc-nudge button{position:absolute;top:2px;right:6px;border:0;background:none;font-size:18px;cursor:pointer;color:var(--cc-muted)}\
-#cc-panel{position:fixed;right:20px;bottom:92px;width:380px;max-width:calc(100vw - 40px);height:560px;max-height:calc(100vh - 120px);background:var(--cc-bg);border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.25);display:none;flex-direction:column;overflow:hidden;z-index:99999;font-family:Karla,Arial,"Noto Sans Kannada",sans-serif;color:var(--cc-fg)}\
+#cc-panel{position:fixed;right:20px;bottom:92px;width:380px;max-width:calc(100vw - 40px);height:560px;max-height:calc(100vh - 120px);background:var(--cc-bg);border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.28);display:none;flex-direction:column;overflow:hidden;z-index:99999;font-family:Karla,Arial,"Noto Sans Kannada",sans-serif;color:var(--cc-fg)}\
 #cc-panel.open{display:flex}\
 #cc-panel.cc-big{width:580px;height:760px;max-height:calc(100vh - 110px)}\
-#cc-head{background:' + G + ';color:#fff;padding:10px 8px 10px 16px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:6px;position:relative}\
-#cc-head small{display:block;font-weight:400;font-size:12px;opacity:.92}\
+#cc-head{background:linear-gradient(135deg,' + G + ',#2f7a3a);color:#fff;padding:10px 8px 10px 12px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:6px;position:relative}\
+#cc-head small{display:block;font-weight:400;font-size:11.5px;opacity:.92}\
+#cc-head .cc-id{display:flex;align-items:center;gap:10px;min-width:0;flex:1}\
+#cc-head .cc-id>div{min-width:0}\
+#cc-title{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\
+#cc-sub{display:block;line-height:1.2;margin-top:1px}\
+#cc-av{flex:0 0 38px;height:38px;border-radius:50%;background:#fff;color:' + G + ';display:flex;align-items:center;justify-content:center;font-size:19px;position:relative}\
+#cc-dot{position:absolute;right:-1px;bottom:-1px;width:11px;height:11px;border-radius:50%;background:#3ddc6b;border:2px solid #fff}\
+#cc-dot.off{background:#aaa}\
 #cc-head .cc-hb{display:flex;gap:0}\
-#cc-head button{background:none;border:0;color:#fff;font-size:17px;cursor:pointer;min-width:34px;height:34px;border-radius:6px;font-family:inherit;font-weight:700}\
+#cc-head button{background:none;border:0;color:#fff;font-size:17px;cursor:pointer;min-width:30px;height:34px;padding:0 4px;border-radius:6px;font-family:inherit;font-weight:700}\
 #cc-head button:hover{background:rgba(255,255,255,.18)}\
 #cc-set{display:none;position:absolute;right:8px;top:52px;background:var(--cc-bg);color:var(--cc-fg);border:1px solid var(--cc-line);border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.25);padding:10px 14px;z-index:5;font-weight:400;font-size:14px;min-width:230px}\
 #cc-set.open{display:block}\
 #cc-set label{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0;cursor:pointer}\
 #cc-set select{font:inherit;background:var(--cc-bg);color:var(--cc-fg);border:1px solid var(--cc-chip);border-radius:6px;padding:2px 4px}\
 #cc-set input[type=checkbox]{width:18px;height:18px;accent-color:' + G + '}\
-#cc-msgs{flex:1;overflow-y:auto;padding:14px;background:var(--cc-bg2);scroll-behavior:smooth;overscroll-behavior:contain}\
+#cc-msgs{scrollbar-width:thin;flex:1;overflow-y:auto;padding:14px;background:var(--cc-bg2);scroll-behavior:smooth;overscroll-behavior:contain}\
 .cc-m{max-width:92%;padding:9px 13px;border-radius:14px;margin-bottom:10px;font-size:14px;line-height:1.55;word-wrap:break-word;overflow-wrap:anywhere}\
 .cc-m div{margin:0}.cc-m .cc-gap{height:7px}\
 .cc-m .cc-li{padding-left:14px;text-indent:-12px}\
@@ -199,9 +209,20 @@
 .cc-acts{display:flex;gap:4px;margin:-6px 0 10px}\
 .cc-acts button{background:none;border:0;color:var(--cc-muted);font-size:12px;cursor:pointer;padding:2px 6px;border-radius:6px;font-family:inherit}\
 .cc-acts button:hover{background:var(--cc-line);color:var(--cc-fg)}\
+#cc-msgs .cc-turn,#cc-msgs>.cc-user{animation:cc-in .25s ease-out}\
+@keyframes cc-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}\
+.cc-choices{display:flex;flex-direction:column;gap:7px;margin:2px 0 12px;max-width:92%}\
+.cc-choices .cc-opt{display:flex;align-items:center;gap:10px;text-align:left;background:var(--cc-bot);border:1px solid var(--cc-line);border-radius:12px;padding:9px 12px;font:600 13.5px/1.3 Karla,Arial,"Noto Sans Kannada",sans-serif;color:var(--cc-fg);cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.05);transition:border-color .15s,transform .15s,background .15s}\
+.cc-choices .cc-opt:hover{border-color:' + G + ';background:var(--cc-tint);transform:translateX(2px)}\
+.cc-choices .cc-oi{flex:0 0 30px;height:30px;border-radius:50%;background:var(--cc-tint);display:flex;align-items:center;justify-content:center;font-size:16px}\
+.cc-choices .cc-ol{flex:1}\
+.cc-choices .cc-opt::after{content:"\\203A";color:var(--cc-muted);font-size:20px;line-height:1}\
+.cc-choices .cc-back{align-self:flex-start;background:none;border:0;color:var(--cc-muted);font:12.5px Karla,Arial,sans-serif;cursor:pointer;padding:2px 4px}\
+.cc-choices .cc-back:hover{color:' + G + '}\
 .cc-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}\
 .cc-chips button{background:var(--cc-bot);border:1px solid var(--cc-chip);border-radius:16px;padding:5px 11px;font-size:12.5px;cursor:pointer;font-family:inherit;color:var(--cc-fg)}\
-.cc-chips button:hover{border-color:' + G + ';color:' + G + '}\
+.cc-chips button{transition:background .15s,border-color .15s}\
+.cc-chips button:hover{border-color:' + G + ';color:' + G + ';background:var(--cc-tint)}\
 .cc-chips button.cc-primary{background:' + G + ';border-color:' + G + ';color:#fff}\
 .cc-fb{font-size:12px;color:var(--cc-muted);margin:-4px 0 10px;display:flex;gap:8px;align-items:center}\
 .cc-fb button{background:none;border:1px solid var(--cc-line);border-radius:12px;cursor:pointer;padding:1px 8px;font-size:13px;color:var(--cc-fg)}\
@@ -225,12 +246,14 @@
 .cc-typing i:nth-child(2){animation-delay:.15s}.cc-typing i:nth-child(3){animation-delay:.3s}\
 @keyframes cc-b{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-4px);opacity:1}}\
 @keyframes cc-pulse{50%{box-shadow:0 0 0 6px rgba(253,68,65,.25)}}\
-@media (prefers-reduced-motion:reduce){.cc-typing i,#cc-mic.on{animation:none}#cc-msgs{scroll-behavior:auto}#cc-launcher{transition:none}}\
-#cc-form{display:flex;align-items:center;border-top:1px solid var(--cc-line);background:var(--cc-bg);padding-bottom:env(safe-area-inset-bottom)}\
-#cc-input{flex:1;border:0;padding:14px;font-size:16px;outline:none;font-family:inherit;min-width:0;background:transparent;color:var(--cc-fg)}\
+@media (prefers-reduced-motion:reduce){.cc-typing i,#cc-mic.on,#cc-msgs .cc-turn,#cc-msgs>.cc-user,#cc-launcher::before{animation:none}.cc-choices .cc-opt{transition:none}#cc-msgs{scroll-behavior:auto}#cc-launcher{transition:none}}\
+#cc-form{display:flex;align-items:center;gap:4px;border-top:1px solid var(--cc-line);background:var(--cc-bg);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}\
+#cc-input{flex:1;border:1px solid var(--cc-line);border-radius:22px;padding:10px 16px;font-size:16px;outline:none;font-family:inherit;min-width:0;background:var(--cc-bg2);color:var(--cc-fg)}\
+#cc-input:focus{border-color:' + G + '}\
 #cc-mic{background:none;border:0;font-size:19px;cursor:pointer;width:38px;height:38px;border-radius:50%;color:var(--cc-fg)}\
 #cc-mic.on{background:' + RED + ';color:#fff;animation:cc-pulse 1.2s infinite}\
-#cc-send{background:none;border:0;color:' + G + ';font-weight:700;padding:0 16px;cursor:pointer;font-family:inherit;font-size:15px}\
+#cc-send{flex:0 0 40px;height:40px;border-radius:50%;background:' + G + ';border:0;color:#fff;padding:0;cursor:pointer;display:flex;align-items:center;justify-content:center}\
+#cc-send:hover{filter:brightness(1.08)}\
 .cc-streaming::after{content:"";display:inline-block;width:7px;height:7px;margin-left:3px;border-radius:50%;background:currentColor;vertical-align:middle;animation:cc-p 1s infinite}\
 @keyframes cc-p{50%{opacity:.25}}\
 #cc-toast{position:absolute;left:50%;bottom:64px;transform:translateX(-50%);background:#222;color:#fff;border-radius:16px;padding:6px 14px;font-size:12.5px;display:none;z-index:6;max-width:88%;text-align:center}\
@@ -246,11 +269,11 @@
 
     var panel = $('div'); panel.id = 'cc-panel'; panel.setAttribute('role', 'dialog');
     panel.innerHTML =
-      '<div id="cc-head"><div><span id="cc-title"></span><small id="cc-sub"></small></div>' +
+      '<div id="cc-head"><div class="cc-id"><span id="cc-av" aria-hidden="true">&#127807;<i id="cc-dot"></i></span><div><span id="cc-title"></span><small id="cc-sub"></small></div></div>' +
       '<div class="cc-hb"><button data-a="lang" type="button"></button><button data-a="menu" type="button">&#9776;</button><button data-a="settings" type="button">&#9881;</button><button data-a="reset" type="button">&#8635;</button><button data-a="close" type="button">&times;</button></div>' +
       '<div id="cc-set"></div></div>' +
       '<div id="cc-msgs" role="log" aria-live="polite"></div><div id="cc-toast" role="status"></div>' +
-      '<form id="cc-form"><input id="cc-input" autocomplete="off" maxlength="300"><button id="cc-mic" type="button">&#127908;</button><button id="cc-send" type="submit"></button></form>' +
+      '<form id="cc-form"><input id="cc-input" autocomplete="off" maxlength="300"><button id="cc-mic" type="button">&#127908;</button><button id="cc-send" type="submit"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-6.8l9-1.7-9-1.7V3.5L22 12z"/></svg></button></form>' +
       '<div id="cc-foot"></div>';
     document.body.appendChild(launcher); document.body.appendChild(nudge); document.body.appendChild(panel);
 
@@ -267,6 +290,7 @@
     function t(key) { return (lang === 'kn' && (KNUI[key] || T.kn[key])) || T.en[key] || key; }
     function tl(key, l) { return (l === 'kn' && (KNUI[key] || T.kn[key])) || T.en[key] || key; }
     function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
+    function revealTurn(turn) { if (turn.offsetHeight > msgs.clientHeight - 20) msgs.scrollTop = Math.max(0, turn.offsetTop - msgs.offsetTop - 8); }   /* tall option lists: keep the question in view */
     function toast(text) { toastEl.textContent = text; toastEl.style.display = 'block'; clearTimeout(toast.t); toast.t = setTimeout(function () { toastEl.style.display = 'none'; }, 3200); }
 
     function save() { ssSet(KEY, JSON.stringify(hist.slice(-40))); if (ctx) ssSet(KEYCTX, JSON.stringify(ctx)); }
@@ -283,7 +307,7 @@
     function applyLangChrome() {
       panel.querySelector('#cc-title').textContent = t('title');
       panel.querySelector('#cc-sub').textContent = navigator.onLine === false ? t('offline') : t('subtitle');
-      input.placeholder = t('placeholder'); panel.querySelector('#cc-send').textContent = t('send');
+      input.placeholder = t('placeholder'); var sb = panel.querySelector('#cc-send'); sb.title = t('send'); sb.setAttribute('aria-label', t('send')); panel.querySelector('#cc-dot').className = navigator.onLine === false ? 'off' : '';
       var lb = panel.querySelector('[data-a="lang"]'); lb.textContent = t('langSwitch'); lb.title = t('langSwitchTitle'); lb.setAttribute('aria-label', t('langSwitchTitle'));
       [['menu', 'menu'], ['settings', 'settings'], ['reset', 'reset'], ['close', 'close']].forEach(function (p) { var b = panel.querySelector('[data-a="' + p[0] + '"]'); b.title = t(p[1]); b.setAttribute('aria-label', t(p[1])); });
       micBtn.title = t('mic'); micBtn.setAttribute('aria-label', t('mic'));
@@ -435,7 +459,7 @@
         el.appendChild(d);
       });
     }
-    function clearTransient() { Array.prototype.forEach.call(msgs.querySelectorAll('.cc-chips,.cc-fb'), function (n) { n.parentNode.removeChild(n); }); }
+    function clearTransient() { Array.prototype.forEach.call(msgs.querySelectorAll('.cc-chips,.cc-fb,.cc-choices'), function (n) { n.parentNode.removeChild(n); }); }
     function renderUser(text) { var d = $('div', 'cc-m cc-user'); d.textContent = text; msgs.appendChild(d); }
 
     function copyText(text) {
@@ -563,6 +587,18 @@
         });
         tail.push(fb);
       }
+      if (rec.choices && rec.choices.length) {
+        var cw = $('div', 'cc-choices');
+        rec.choices.forEach(function (o) {
+          var b = $('button', 'cc-opt'); b.type = 'button';
+          if (o.icon) { var ic = $('span', 'cc-oi', o.icon); ic.setAttribute('aria-hidden', 'true'); b.appendChild(ic); }
+          b.appendChild($('span', 'cc-ol', o.label));
+          b.addEventListener('click', function () { ask(o.label, o.to); });
+          cw.appendChild(b);
+        });
+        if (rec.back) { var bk = $('button', 'cc-back', '\u2190 ' + t('back')); bk.type = 'button'; bk.addEventListener('click', function () { ask(t('back'), rec.back); }); cw.appendChild(bk); }
+        tail.push(cw);
+      }
       if (rec.chips && rec.chips.length) {
         var c = $('div', 'cc-chips');
         rec.chips.forEach(function (ch, i) {
@@ -586,9 +622,9 @@
         if (dots.parentNode) dots.parentNode.removeChild(dots);
         if (!rec.ephemeral) { hist.push({ who: 'bot', rec: rec }); save(); }
         tone('recv');
-        var b = buildTurn(rec); msgs.appendChild(b.turn); scrollDown();
+        var b = buildTurn(rec); msgs.appendChild(b.turn); scrollDown(); if (rec.choices && rec.choices.length) revealTurn(b.turn);
         function finish() {
-          b.tail.forEach(function (k) { k.style.display = ''; }); scrollDown(); busy = false;
+          b.tail.forEach(function (k) { k.style.display = ''; }); scrollDown(); if (rec.choices && rec.choices.length) revealTurn(b.turn); busy = false;
           if (autoRead && rec.text && !rec.ephemeral) speak(rec.text, rec.lang || lang);
           if (o.after) o.after();
           drain();
@@ -728,10 +764,10 @@
       if (form && query && query.charAt(0) === '#') form = null;     /* user clicked a topic: leave the form */
       var r = engine.reply(query || label, ctx, { lang: lang });
       if (r.lang === 'kn' && lang !== 'kn') setLang('kn');           /* user typed Kannada: follow them */
-      var rec = { text: r.text, links: r.links, chips: r.chips, live: r.live, lang: r.lang, handoff: r.handoff };
+      var rec = { text: r.text, links: r.links, chips: r.chips, live: r.live, lang: r.lang, handoff: r.handoff, choices: r.choices, back: r.back };
       if (r.products) { rec.kind = 'products'; rec.filter = r.products.filter; }
-      if (['greet', 'thanks', 'bye'].indexOf(r.id) >= 0) rec.noActs = true;
-      if (r.id && ['greet', 'thanks', 'bye', 'fallback', 'person', 'year', 'form', 'handoff', 'products', 'clarify', 'misc', 'multi'].indexOf(r.id) < 0) rec.fb = { q: label, id: r.id };
+      if (['greet', 'thanks', 'bye', 'guide'].indexOf(r.id) >= 0) rec.noActs = true;
+      if (r.id && ['greet', 'thanks', 'bye', 'guide', 'fallback', 'person', 'year', 'form', 'handoff', 'products', 'clarify', 'misc', 'multi'].indexOf(r.id) < 0) rec.fb = { q: label, id: r.id };
       if (r.unanswered) emit('unanswered', { question: label });
       if (r.form) {
         var fid = r.form;
@@ -743,7 +779,10 @@
     }
     function submitText(q) { if (!q) return; ask(q, q); }
 
-    function welcome() { say({ text: t('welcome'), links: [], chips: topicChips(), lang: lang, noActs: true }, { delay: 250, stream: false }); }
+    function welcome() {
+      var g = engine.reply('#guide:root', ctx, { lang: lang });
+      say({ text: t('welcome'), links: [], chips: topicChips(), choices: g && g.id === 'guide' ? g.choices : null, lang: lang, noActs: true }, { delay: 250, stream: false });
+    }
     function topicChips(extra) {
       var base = engine.chips.map(function (c) { var e = engine.kb.filter(function (k) { return '#' + k.id === c[1]; })[0]; return [lang === 'kn' && e && e.tkn ? e.tkn : c[0], c[1]]; });
       (extra || []).forEach(function (id) { var e = engine.kb.filter(function (k) { return k.id === id; })[0]; if (e) base.push([lang === 'kn' && e.tkn ? e.tkn : e.t, '#' + id]); });
@@ -759,10 +798,10 @@
       });
       return true;
     }
-    function stripExtras(rec) { var c = {}; for (var k in rec) c[k] = rec[k]; c.chips = []; c.fb = null; c.handoff = false; return c; }
+    function stripExtras(rec) { var c = {}; for (var k in rec) c[k] = rec[k]; c.chips = []; c.choices = null; c.fb = null; c.handoff = false; return c; }
 
     function open() {
-      panel.classList.add('open'); nudge.style.display = 'none'; tone('open');
+      panel.classList.add('open'); nudge.style.display = 'none'; launcher.classList.add('cc-seen'); tone('open');
       if (!msgs.children.length) {
         if (!engine) { var ld = $('div', 'cc-m cc-bot', t('loading')); ld.id = 'cc-loading'; msgs.appendChild(ld); }
         else if (!restore()) welcome();
@@ -779,7 +818,7 @@
       if (a === 'close') close();
       else if (a === 'lang') setLang(lang === 'kn' ? 'en' : 'kn');
       else if (a === 'settings') setBox.classList.toggle('open');
-      else if (a === 'menu' && engine) { clearTransient(); say({ text: t('topics'), links: [], chips: topicChips(['awards', 'cert', 'industrial', 'complaint']), lang: lang, ephemeral: true }, { delay: 150, stream: false }); }
+      else if (a === 'menu' && engine) { clearTransient(); var mc = topicChips(['awards', 'cert', 'industrial', 'complaint']); if (engine.guides && engine.guides.root) { var hc = [t('chooseForMe'), '#guide:root']; hc.primary = true; mc.unshift(hc); } say({ text: t('topics'), links: [], chips: mc, lang: lang, ephemeral: true }, { delay: 150, stream: false }); }
       else if (a === 'reset' && engine) {
         clearTransient();
         if (hist.length > 1) {

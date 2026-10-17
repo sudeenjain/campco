@@ -1,0 +1,282 @@
+{
+ "_readme": "mgmt: [name, role, email, kbId?]. board: \"Name|Role|kbId\" or \"Name\". presidents/mds: [name, fromISO, toISO, label as published].",
+ "mgmt": [
+  [
+   "Dr. B.V. Sathyanarayana",
+   "Managing Director",
+   "bvsnarayana@campco.org",
+   "md"
+  ],
+  [
+   "Reshma Mallya",
+   "General Manager",
+   "reshmamallya@campco.org"
+  ],
+  [
+   "Govinda Bhat S",
+   "Dy. General Manager (Marketing)",
+   "govindabhats@campco.org"
+  ],
+  [
+   "Raghavendra P",
+   "Asst. General Manager (Marketing)",
+   "raghavendrap@campco.org"
+  ],
+  [
+   "Shyam Prasad H",
+   "Dy. General Manager I/C (CCF)",
+   "shyamprasadh@campco.org"
+  ],
+  [
+   "Udayakumar Rai",
+   "Asst. General Manager (Marketing) - CMD 1",
+   "udayakumarrai@campco.org"
+  ],
+  [
+   "P. Muralidhara",
+   "Asst. General Manager (Accounts) I/C",
+   "pmuralidhara@campco.org"
+  ]
+ ],
+ "board": [
+  "Sri S.R. Satishchandra|President|president",
+  "Sri Padmaraj Pattaje|Vice President|president",
+  "Sri Dayananda Hegde",
+  "Sri M. Mahesh Chouta M",
+  "Sri Radhakrishnan K",
+  "Sri Sathyanarayana Prasad",
+  "Sri Raghavendra H M",
+  "Sri Satheeshchandra Bhandary K",
+  "Sri Theertharama A V",
+  "Sri Purushothama Bhat M",
+  "Sri Venkatramana Bhat Y",
+  "Sri Vivekananda Gowda P",
+  "Sri Sadananda Shetty K",
+  "Sri Murali Krishna K N",
+  "Sri Ganesh Parakatta",
+  "Smt. Malini Prasad",
+  "Smt. Sowmya Prakash Madangallu",
+  "Sri Vishwanath Ishwar Hegde",
+  "Sri Ganesh"
+ ],
+ "presidents": [
+  [
+   "Varanashi Subraya Bhat",
+   "1973-07-01",
+   "1978-08-14",
+   "Jul 1973 - 14 Aug 1978"
+  ],
+  [
+   "M. Ramappa",
+   "1978-08-15",
+   "1978-09-08",
+   "15 Aug 1978 - 8 Sep 1978"
+  ],
+  [
+   "P. Ishwara Bhat",
+   "1978-09-09",
+   "1978-10-27",
+   "9 Sep 1978 - 27 Oct 1978"
+  ],
+  [
+   "Varanashi Subraya Bhat",
+   "1978-10-28",
+   "1983-10-12",
+   "28 Oct 1978 - 12 Oct 1983"
+  ],
+  [
+   "B. Narayana Nayak",
+   "1983-10-12",
+   "1984-02-13",
+   "12 Oct 1983 - 13 Feb 1984"
+  ],
+  [
+   "Varanashi Subraya Bhat",
+   "1984-02-14",
+   "1990-12-31",
+   "14 Feb 1984 - 31 Dec 1990"
+  ],
+  [
+   "K. Rama Bhat",
+   "1991-01-01",
+   "1993-08-18",
+   "1 Jan 1991 - 18 Aug 1993"
+  ],
+  [
+   "Khandige Srikrishna Bhat",
+   "1993-08-18",
+   "1993-12-31",
+   "18 Aug 1993 - 31 Dec 1993"
+  ],
+  [
+   "K. Rama Bhat",
+   "1994-01-01",
+   "1996-12-31",
+   "1 Jan 1994 - 31 Dec 1996"
+  ],
+  [
+   "S.R. Rangamurthy",
+   "1997-01-01",
+   "2001-03-30",
+   "1 Jan 1997 - 30 Mar 2001"
+  ],
+  [
+   "B. Nagaraja Shetty",
+   "2001-03-30",
+   "2004-03-31",
+   "30 Mar 2001 - 31 Mar 2004"
+  ],
+  [
+   "V. Srikrishna Bhat",
+   "2004-04-01",
+   "2004-04-07",
+   "1 Apr 2004 - 7 Apr 2004"
+  ],
+  [
+   "L.N. Kudoor",
+   "2004-04-08",
+   "2005-12-24",
+   "8 Apr 2004 - 24 Dec 2005"
+  ],
+  [
+   "S.R. Rangamurthy",
+   "2005-12-25",
+   "2010-01-14",
+   "25 Dec 2005 - 14 Jan 2010"
+  ],
+  [
+   "V. Srikrishna Bhat",
+   "2010-01-15",
+   "2010-01-30",
+   "15 Jan 2010 - 30 Jan 2010"
+  ],
+  [
+   "Konkodi Padmanabha",
+   "2010-01-31",
+   "2015-08-30",
+   "31 Jan 2010 - 30 Aug 2015"
+  ],
+  [
+   "S.R. Satishchandra",
+   "2015-08-31",
+   "2020-12-12",
+   "31 Aug 2015 - 12 Dec 2020"
+  ],
+  [
+   "A. Kishore Kumar Kodgi",
+   "2020-12-13",
+   "2025-12-03",
+   "13 Dec 2020 - 3 Dec 2025"
+  ],
+  [
+   "S.R. Satishchandra",
+   "2025-12-03",
+   "9999-12-31",
+   "3 Dec 2025 - present"
+  ]
+ ],
+ "mds": [
+  [
+   "G.K. Sangameshwar",
+   "1973-07-01",
+   "1978-06-01",
+   "Jul 1973 - 1 Jun 1978"
+  ],
+  [
+   "D.V. Nayak",
+   "1978-06-02",
+   "1978-07-02",
+   "2 Jun 1978 - 2 Jul 1978"
+  ],
+  [
+   "A.A. Desai, IAS",
+   "1978-07-03",
+   "1988-03-07",
+   "3 Jul 1978 - 7 Mar 1988"
+  ],
+  [
+   "Sudhir Kumar, IAS",
+   "1988-03-08",
+   "1988-06-24",
+   "8 Mar 1988 - 24 Jun 1988"
+  ],
+  [
+   "C.N. Parashiva Murthy",
+   "1988-09-01",
+   "1989-05-31",
+   "1 Sep 1988 - 31 May 1989"
+  ],
+  [
+   "M.S. Mudnur",
+   "1989-06-01",
+   "1992-10-01",
+   "1 Jun 1989 - 1 Oct 1992"
+  ],
+  [
+   "S.D. Meena, IAS",
+   "1992-10-02",
+   "1993-04-24",
+   "2 Oct 1992 - 24 Apr 1993"
+  ],
+  [
+   "Rajneesh Goel, IAS",
+   "1993-05-27",
+   "1995-07-11",
+   "27 May 1993 - 11 Jul 1995"
+  ],
+  [
+   "K. Pramod Kumar Rai",
+   "1995-07-14",
+   "2000-08-16",
+   "14 Jul 1995 - 16 Aug 2000"
+  ],
+  [
+   "R. Seetharam",
+   "2000-08-17",
+   "2003-07-31",
+   "17 Aug 2000 - 31 Jul 2003"
+  ],
+  [
+   "V. Channappa",
+   "2003-03-01",
+   "2003-09-22",
+   "1 Mar 2003 (as published) - 22 Sep 2003"
+  ],
+  [
+   "G.R. Krishnadas",
+   "2003-09-22",
+   "2005-09-23",
+   "22 Sep 2003 - 23 Sep 2005"
+  ],
+  [
+   "P. Madhusudan Rao",
+   "2005-09-23",
+   "2010-03-31",
+   "23 Sep 2005 - 31 Mar 2010"
+  ],
+  [
+   "A. Subramanya Bhat",
+   "2010-04-01",
+   "2012-03-31",
+   "1 Apr 2010 - 31 Mar 2012"
+  ],
+  [
+   "Suresh Bhandary M",
+   "2012-03-31",
+   "2021-04-30",
+   "31 Mar 2012 - 30 Apr 2021"
+  ],
+  [
+   "Krishna Kumar H M",
+   "2021-05-01",
+   "2024-04-30",
+   "1 May 2021 - 30 Apr 2024"
+  ],
+  [
+   "Dr. B.V. Sathyanarayana",
+   "2024-05-01",
+   "9999-12-31",
+   "1 May 2024 - present"
+  ]
+ ]
+}

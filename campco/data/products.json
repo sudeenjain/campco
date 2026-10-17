@@ -1,0 +1,9 @@
+{
+ "_readme": "OFFLINE SNAPSHOT of shop products, used when the live Shopify feed (campcocart.com/products.json) cannot be reached. Only items already listed in the bot's knowledge base are included. Add image URLs and more products as needed.",
+ "updated": "2026-10-16",
+ "items": [
+  { "title": "Campco Kala Sona (black pepper)", "price": 45, "url": "https://campcocart.com/products/kala-sona", "image": "", "tags": ["pepper", "spice", "kala sona"], "available": true },
+  { "title": "Campco Calpa coconut oil (from)", "price": 218, "url": "https://campcocart.com/products/campco-calpa", "image": "", "tags": ["coconut", "oil", "calpa"], "available": true },
+  { "title": "Campo Orange Eclairs", "price": 150, "url": "https://campcocart.com/collections/chocolates", "image": "", "tags": ["eclairs", "chocolate", "orange", "toffee"], "available": true }
+ ]
+}

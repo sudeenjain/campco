@@ -1,0 +1,5 @@
+{
+ "_readme": "List openings in 'openings'. Leave it empty [] when there are none. Example opening: { \"title\": \"Assistant Manager - Accounts\", \"location\": \"Mangalore\", \"lastDate\": \"2026-11-30\", \"url\": \"https://campco.org/careers/\" }",
+ "updated": "2026-10-16",
+ "openings": []
+}

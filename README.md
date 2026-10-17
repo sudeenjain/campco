@@ -36,3 +36,10 @@ tools/                bundle.js, extract-data.js, original v3 file
 - `node tests/run.js` - 172 engine checks (answers, Kannada spellings, context, rates freshness, robustness).
 - When someone reports a bad answer: add the exact question + expected topic to `tests/cases.json`, fix the keyword/synonym in `data/`, rerun.
 - `tests/browser/*.test.js` - real-browser checks (need `npm i playwright`; edit the chromium path at the top).
+
+## "Ask me" guides (tap-to-answer questions)
+The bot can ask a question and show tappable options instead of waiting for typing (welcome screen: "I'm a farmer / buyer / business..."; vague "rate" asks "Which crop?"; failed answers offer "Help me choose").
+- Edit them in `data/forms.json` -> `guides`. Each node = a question (`q`, English + Kannada) and `opts`.
+- An option's `to` is: `#guide:<node>` (next question), `#<kb id>` (an answer), `#form:<id>` (a form), `#products-live`, or plain text (asked like a typed question, e.g. `areca price`).
+- `back` on a node adds a "Back" button. `node tests/run.js` checks every option leads to a real answer, form or question.
+- Kannada text in guides was machine-written: please have a native speaker review it with `kn.json`.

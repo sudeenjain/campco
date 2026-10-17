@@ -67,6 +67,7 @@
     formOpen: 'Sure - I’ll take a few details.',
     productsIntro: 'Here are some products from the CAMPCO Cart shop:',
     showProducts: 'Show products',
+    chooseForMe: 'Help me choose',
     yearBefore: 'CAMPCO was registered on 11 July 1973, so there were no office-bearers before that.',
     first: 'was the first in the published list, so there is no one before.',
     last: 'is the latest in the published list, so there is no one after.',
@@ -148,6 +149,7 @@
     var KN = data.kn || {}, KN_E = KN.entries || {}, UI_KN = KN.ui || {};
     var FORMS = data.forms || { forms: {}, kbActions: {} };
     var CHIPS = META.chips || [];
+    var GUIDES = FORMS.guides || {};
     function nowMs() { return typeof opts.now === 'function' ? opts.now() : Date.now(); }
     function ui(key, lang) { return (lang === 'kn' && UI_KN[key]) || UI_EN[key] || ''; }
 
@@ -303,6 +305,17 @@
       });
       res.sort(function (a, b) { return (b.strong + b.weak * 0.3) - (a.strong + a.weak * 0.3); });
       return res;
+    }
+
+    /* ---- 'ask me' guides: the bot asks a question, the person taps an answer (data: forms.json -> guides) ---- */
+    function gl(o, lang) { return (o && ((lang === 'kn' && o.kn) || o.en)) || ''; }
+    function guideNode(key, lang) {
+      var g = GUIDES[key]; if (!g) return null;
+      return {
+        text: gl(g.q, lang), links: [], chips: [], id: 'guide', guide: key,
+        choices: (g.opts || []).map(function (o) { return { icon: o.i || '', label: gl(o, lang), to: o.to }; }),
+        back: g.back || ''
+      };
     }
 
     /* ---- reply building blocks ---- */
@@ -480,7 +493,7 @@
       if (auto) text += '\n\n' + ui('handoffAuto', lang);
       return {
         text: text, links: [['Contact Us', SITE + '/contact-us/']],
-        chips: sugg.length ? sugg : chips5(lang),
+        chips: (sugg.length ? sugg : chips5(lang)).concat(GUIDES.root ? [[ui('chooseForMe', lang), '#guide:root']] : []),
         id: 'fallback', unanswered: true, handoff: auto
       };
     }
@@ -564,6 +577,7 @@
       if (hasPrice && commodity && !shopy) useCommodity = commodity;
       else if (hasPrice && !commodity && ctx.commodity && !shopy && qt.all.length <= 6 && (pronoun || COMMODITY_KB[ctx.last])) useCommodity = ctx.commodity;
       else if (!hasPrice && commodity && ctx.last === 'rates' && (qt.all.length <= 2 || /^\s*(and|also|what about|how about)\b/i.test(q))) useCommodity = commodity;
+      if (!useCommodity && hasPrice && !commodity && !ctx.commodity && !shopy && qt.all.length <= 3 && GUIDES.rate) { ctx.fails = 0; return guideNode('rate', lang); }
       if (!useCommodity) return null;
       var r = ratesAnswer(useCommodity, lang, ctx);
       if (r) { ctx.fails = 0; return r; }
@@ -586,6 +600,7 @@
         var key = q.slice(1);
         if (key.indexOf('form:') === 0 && (FORMS.forms || {})[key.slice(5)]) return { text: ui('formOpen', lang), links: [], chips: [], id: 'form', form: key.slice(5) };
         if (key === 'products-live') return { text: ui('productsIntro', lang), links: [['CAMPCO Cart', CART + '/']], chips: chipsFor(['shop', 'industrial'], lang), id: 'products', products: { filter: productFilterFromCtx(ctx) } };
+        if (key.indexOf('guide:') === 0) { var gn = guideNode(key.slice(6), lang); if (gn) { ctx.fails = 0; return gn; } }
         if (BY_ID[key]) { var rr = pack(BY_ID[key], lang, null, ctx); ctx.fails = 0; return rr; }
       }
 
@@ -662,6 +677,18 @@
         if (!BY_ID[id]) problems.push('forms.json kbActions unknown id: ' + id);
         FORMS.kbActions[id].forEach(function (c) { if (c[1].indexOf('#form:') === 0 && !(FORMS.forms || {})[c[1].slice(6)]) problems.push('kbActions ' + id + ' -> missing form ' + c[1]); });
       });
+      Object.keys(GUIDES).forEach(function (k) {
+        var g = GUIDES[k]; if (!g.q || !g.q.en) problems.push('guide ' + k + ' has no question');
+        if (g.back && !GUIDES[g.back.replace(/^#guide:/, '')]) problems.push('guide ' + k + ' back -> missing ' + g.back);
+        (g.opts || []).forEach(function (o) {
+          if (!o.en || !o.kn) problems.push('guide ' + k + ' option needs en and kn text: ' + (o.en || o.to));
+          var to = o.to || '';
+          if (to.indexOf('#guide:') === 0 && !GUIDES[to.slice(7)]) problems.push('guide ' + k + ' -> missing guide ' + to);
+          else if (to.indexOf('#form:') === 0 && !(FORMS.forms || {})[to.slice(6)]) problems.push('guide ' + k + ' -> missing form ' + to);
+          else if (/^#[a-z0-9_-]+$/i.test(to) && to !== '#products-live' && !BY_ID[to.slice(1)]) problems.push('guide ' + k + ' -> unknown id ' + to);
+          else if (!to) problems.push('guide ' + k + ' option without target');
+        });
+      });
       PEOPLE.forEach(function (p) { if (p.kb && !BY_ID[p.kb]) problems.push('person ' + p.name + ' points to unknown id ' + p.kb); });
       [['presidents', PRESIDENTS], ['mds', MDS]].forEach(function (t) {
         t[1].forEach(function (r, i) { if (r[1] > r[2]) problems.push(t[0] + ' row ' + i + ' has from > to'); });
@@ -673,7 +700,7 @@
 
     return {
       reply: reply, newCtx: newCtx, validate: validate, kb: KB, ui: ui,
-      forms: FORMS.forms || {}, chips: CHIPS, meta: META,
+      forms: FORMS.forms || {}, guides: GUIDES, chips: CHIPS, meta: META,
       _rank: rank, _tokenize: tokenize, _ratesAnswer: ratesAnswer
     };
   }
