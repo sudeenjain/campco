@@ -1,0 +1,20 @@
+const { chromium } = require('playwright');
+(async () => {
+  const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] });
+  const c = await b.newContext(); const p = await c.newPage(); const posts = []; let fail = true;
+  await p.route(/campco\.org|campcocart|googleapis|cloudflare/, r => r.abort());
+  await p.route('**/index.html', async r => { const res = await r.fetch(); let t = await res.text(); t = t.replace("formUrl: ''", "formUrl: 'http://localhost:8765/enquiry-test'"); await r.fulfill({ response: res, body: t }); });
+  await p.route('**/enquiry-test', async r => { if (fail) return r.abort(); posts.push(r.request().postData()); await r.fulfill({ status: 200, body: '{}', headers: { 'access-control-allow-origin': '*' } }); });
+  await p.goto('http://localhost:8765/index.html'); await p.waitForFunction(() => window.CampcoBot && window.CampcoBot.engine);
+  await p.click('#cc-launcher');
+  const send = async q => { await p.fill('#cc-input', q); await p.press('#cc-input', 'Enter'); await p.waitForTimeout(150); };
+  await p.waitForTimeout(800); await send('book a visit'); await send('Asha'); await send('9845012345'); await send('Sunrise School'); await send('40'); await send('12 Nov'); await p.waitForTimeout(9000);
+  console.log((await p.$$eval('.cc-m:not(.cc-typing)', a => a.map(x => x.className.indexOf('user')>0?'U: '+x.innerText:'B: '+x.innerText.slice(0,70)))).join('\n')); await p.click('.cc-chips button:has-text("Send it")'); await p.waitForTimeout(2500);
+  const txt = (await p.$$eval('.cc-bot:not(.cc-typing)', a => a.map(x => x.innerText))).pop();
+  console.log('failed-post message:', JSON.stringify(txt.slice(0, 90)));
+  console.log(/not been sent|could not send|saved and will be sent/i.test(txt) && !/reached the CAMPCO team/.test(txt) ? 'PASS never claims success on failure' : 'FAIL claimed success');
+  console.log('queued in localStorage:', await p.evaluate(() => JSON.parse(localStorage.getItem('cc-queue-v4') || '[]').length));
+  fail = false; await c.setOffline(true); await c.setOffline(false); await p.evaluate(() => window.dispatchEvent(new Event('online'))); await p.waitForTimeout(1500);
+  console.log(posts.length === 1 && JSON.parse(posts[0]).form === 'visit' ? 'PASS queued form auto-sent on reconnect' : 'FAIL retry: ' + posts.length);
+  await b.close();
+})();

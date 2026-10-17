@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home - Campco</title>
+<meta name="description" content="Campco Cooperative - Creating A Community">
+<link rel="icon" href="https://campco.org/wp-content/uploads/2022/11/faviconcampco1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,500,600,700%7CLora:400,600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+:root{--green:#459545;--red:#fd4441;--text:#000}
+*{box-sizing:border-box}
+body{margin:0;font-family:Karla,Arial,sans-serif;color:#333;background:#fff}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 15px}
+.row{display:flex;flex-wrap:wrap;margin:0 -15px}
+.col{padding:0 15px;flex:1 1 300px}
+/* topbar */
+.topbar{background:var(--red);color:#fff;font-size:14px;line-height:42px}
+.topbar a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
+/* header */
+header.main{background:#fff;position:sticky;top:0;z-index:50;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:80px}
+header .logo img{max-height:70px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;align-items:center}
+nav li{position:relative}
+nav a{display:block;padding:10px 9px;font-size:14px;font-weight:500}
+nav a:hover,nav li.current>a{color:var(--green)}
+nav li ul{display:none;position:absolute;top:100%;left:0;background:#fff;min-width:220px;flex-direction:column;box-shadow:0 4px 14px rgba(0,0,0,.12);padding:6px 0}
+nav li:hover>ul{display:flex}
+nav li ul a{font-size:15px;padding:8px 16px}
+nav li ul li ul{left:100%;top:0}
+nav .shop a{background:var(--green);color:#fff;border-radius:30px;padding:8px 18px;margin-left:10px;font-size:12px;font-weight:600}
+nav .shop a:hover{background:var(--red);color:#fff}
+.burger{display:none;background:none;border:0;font-size:26px;cursor:pointer}
+@media(max-width:991px){
+ .burger{display:block}
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;box-shadow:0 6px 12px rgba(0,0,0,.1);max-height:80vh;overflow:auto}
+ nav.open{display:block}
+ nav ul{flex-direction:column;align-items:stretch}
+ nav li ul,nav li ul li ul{display:flex;position:static;box-shadow:none;padding-left:16px}
+}
+/* hero */
+.hero{position:relative;height:clamp(220px,42vw,520px);background:#f4f4f4;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s}
+.hero img.on{opacity:1}
+/* sections */
+.heading{font-size:32px;font-weight:500;text-align:center;margin:0 0 15px}
+.heading span,.color-primary{color:var(--red)}
+.sep{width:10%;min-width:60px;border-top:2px solid var(--green);margin:0 auto 20px}
+.sub{text-align:center;color:#000;font-size:16px;max-width:600px;margin:0 auto}
+section{padding:40px 0}
+.about p{color:#000;font-size:16px;text-align:justify}
+.flex-mid{display:flex;flex-wrap:wrap;align-items:center;gap:30px;margin-bottom:30px}
+.flex-mid>*{flex:1 1 360px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:30px}
+.card{background:#fff;box-shadow:0 0 10px rgba(0,0,0,.12);text-align:center;padding-bottom:30px}
+.card .img{position:relative}
+.card .img h2{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;margin:0;background:rgba(0,0,0,.25);color:#fff}
+.card h3{color:var(--green);font-weight:600;font-size:30px;margin:20px 0 10px}
+.card p{padding:0 25px;color:#000;font-size:16px}
+.btn{display:inline-block;background:var(--green);color:#fff;border-radius:30px;padding:9px 22px;font-size:13px;font-weight:700;margin-top:8px}
+.btn:hover{background:var(--red)}
+.counters{background:var(--green);color:#fff;text-align:center;padding:30px 0}
+.counters .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.counters img{width:60px;margin:0 auto 8px}
+.counters .n{font-size:35px;font-weight:600}
+.counters .l{font-size:20px}
+.msgs{background:#f6f6f6}
+.msg{display:flex;flex-wrap:wrap;gap:30px;align-items:center;margin-bottom:30px}
+.msg>div{flex:1 1 320px}
+.msg h4{font-size:32px;font-weight:500;margin:0 0 15px}
+.msg img{width:270px;border:1px solid #0605055c;margin:0 auto}
+.designation{text-align:center;color:var(--green);font-weight:600;font-size:17px}
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0}
+.news .item{position:relative;color:#fff;text-align:center}
+.news .item .ov{position:absolute;inset:0;background:rgba(0,0,0,.5);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:15px}
+.news h4{font-size:21px;line-height:30px;margin:0 0 6px}
+.news .date{font-size:18px;font-weight:700;margin-bottom:10px}
+footer{background:var(--red);color:#fff}
+footer .main-footer{padding:40px 0 10px}
+footer h5{font-size:18px;margin:0 0 12px}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{font-weight:600;line-height:2}
+footer a{color:#fff}
+.copy{background:#000000d6;text-align:center;padding:14px;font-size:14px}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="container"><i class="fa fa-phone-square"></i> OUR PHONE NUMBER: <a href="tel:08242888200" style="margin-left:10px">0824 2888200</a></div></div>
+
+<header class="main">
+ <div class="container wrap">
+  <a class="logo" href="index.html"><img src="https://campco.org/wp-content/uploads/2022/03/campco_org-logo.png" alt="Campco"></a>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+  <nav id="nav">
+   <ul>
+    <li class="current"><a href="https://campco.org/">Home</a></li>
+    <li><a href="https://campco.org/about-us/">About Us</a></li>
+    <li><a target="_blank" href="https://campcocart.com/">Chocolates</a></li>
+    <li><a target="_blank" href="https://campcocart.com/pages/industrial-products">Industrial Product</a></li>
+    <li><a href="https://campco.org/products/">Products</a>
+     <ul>
+      <li><a href="https://campco.org/areca/">Areca</a></li>
+      <li><a href="https://campco.org/pepper/">Pepper</a></li>
+      <li><a href="https://campco.org/cocoa/">Cocoa</a></li>
+      <li><a href="https://campco.org/rubber/">Rubber</a></li>
+      <li><a href="https://campco.org/coconut-copra/">Coconut/Copra</a></li>
+     </ul></li>
+    <li><a href="#">Categories</a>
+     <ul>
+      <li><a href="#">Directors</a>
+       <ul>
+        <li><a href="https://campco.org/board-of-directors/">Board of Director’s</a></li>
+        <li><a href="https://campco.org/former-managing-directors/">Former Managing Director’s</a></li>
+        <li><a href="https://campco.org/former-president/">Former President</a></li>
+       </ul></li>
+      <li><a href="https://campco.org/top-management/">Management</a></li>
+     </ul></li>
+    <li><a href="#">Others</a>
+     <ul>
+      <li><a target="_blank" href="https://campcochocolates.com/chocolate-factory-visit/">Industrial Visit</a></li>
+      <li><a href="https://campco.org/feedback/">Feedback &amp; Suggestions</a></li>
+      <li><a href="https://campco.org/news/">News</a></li>
+      <li><a href="https://campco.org/contact-us/">Contact Us</a></li>
+      <li><a href="https://campco.org/tender/">Tender</a></li>
+     </ul></li>
+    <li><a href="#">Member Portal</a>
+     <ul>
+      <li><a href="https://campco.org/member-benefit-scheme/">Member Benefit Scheme</a></li>
+      <li><a href="https://campco.org/notification/">Notification</a></li>
+      <li><a href="https://campco.org/elections-details/">Election Details</a></li>
+      <li><a href="https://campco.org/manures-and-fertilizers/">Manures And Fertilizers</a></li>
+      <li><a href="https://campco.org/farmers-desk/">Farmer’s Desk</a>
+       <ul>
+        <li><a target="_blank" href="https://www.accuweather.com">Weather Report</a></li>
+        <li><a target="_blank" href="https://campco.org/wp-content/uploads/2022/04/cocoa-handbook.pdf">Cocoa Handbook</a></li>
+        <li><a target="_blank" href="https://dccd.gov.in/">Cocoa Board</a></li>
+        <li><a target="_blank" href="https://arecanut.org">Arecanut Research and Development Foundation</a></li>
+       </ul></li>
+     </ul></li>
+    <li><a href="https://campco.org/careers/">Careers</a></li>
+    <li class="shop"><a target="_blank" href="https://campcocart.com/">Shop Now</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<!-- HERO (the original Revolution Slider contained template dummy text; replaced with a plain image rotator) -->
+<div class="hero" id="hero">
+ <img class="on" src="https://campco.org/wp-content/uploads/2022/03/campco-01.jpg" alt="Campco">
+ <img src="https://campco.org/wp-content/uploads/2022/03/campco-02.jpg" alt="Campco">
+ <img src="https://campco.org/wp-content/uploads/2022/03/campco-03-banner.jpg" alt="Campco">
+ <img src="https://campco.org/wp-content/uploads/2022/03/campco4.jpg" alt="Campco">
+ <img src="https://campco.org/wp-content/uploads/2022/03/campco-05-1.jpg" alt="Campco">
+</div>
+
+<section class="about">
+ <div class="container">
+  <h4 class="heading">About <span>Campco</span></h4>
+  <div class="sep"></div>
+  <div class="flex-mid">
+   <img src="https://campco.org/wp-content/uploads/2022/03/areca-new-image-.jpg" alt="areca">
+   <div>
+    <p>The organization was founded by Late Sri Varanashi Subraya Bhat in 1973 in Mangalore as The Central Arecanut and Cocoa Marketing and Processing Co-operative Limited or CAMPCO. This was in response to the sufferings of Arecanut and Cocoa growers in the states of Karnataka and Kerala.</p>
+    <p>Arecanut is an important commercial crop in the Western districts of Karnataka and almost all the districts of Kerala. When there was a steep fall in the price of Arecanut between 1970 and 1973, Sri. Subraya Bhat mobilized the Arecanut farmers of the two states of Karnataka and Kerala and promoted Campco. Under his able leadership, CAMPCO succeeded in uplifting the areca nut market and to this day ensure that the farmers get a very good return on their crop. Sri. Subraya Bhat worked as the President of CAMPCO from its inception in 1973, up to the end of December 1990.</p>
+   </div>
+  </div>
+  <div class="flex-mid">
+   <div>
+    <p>CAMPCO is one of the few leading cooperative institutions in the Country working towards building a community of growers and farmers. The company set up a chocolate manufacturing plant in 1986 in Puttur, a city in Dakshina Kannada district of Karnataka. The plant produces chocolates and other products of cocoa both under its own brand and also for other chocolate brands. It has a well set up manufacturing factory equipped with state-of-the-art equipment and a big number of factory workers from around the area. CAMPCO was built on the foundation of empowerment and as the years go on, this foundation is only getting stronger under the guidance of its leaders and cooperative members.</p>
+   </div>
+   <img src="https://campco.org/wp-content/uploads/2022/03/campcochocolatefactory.jpg" alt="campco chocolate factory">
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <h4 class="heading">Our <span>Products</span></h4>
+  <div class="sep"></div>
+  <p class="sub">Being an initiative for farmers’ welfare, Campco believes that partnering with top-notched organizations and companies can go a long way to benefit our farmers.</p>
+  <div class="cards">
+   <div class="card"><div class="img"><img src="https://campco.org/wp-content/uploads/2022/03/arecaa.jpg" alt="arecaa"><h2>Areca</h2></div>
+    <h3>Areca</h3><p>Arecanut is an essential commercial crop in India and finds a place in religious, social and cultural functions. The cultivation of Arecanut is mainly confined to the States of Karnataka, Kerala and Assam, but its consumption is spread all over the country.</p><a class="btn" href="https://campco.org/areca/">READ MORE</a></div>
+   <div class="card"><div class="img"><img src="https://campco.org/wp-content/uploads/2022/03/pepper.jpg" alt="pepper"><h2>Pepper</h2></div>
+    <h3>Pepper</h3><p>Campco procures aromatic, naturally grown and the finest quality of pepper. This precious spice is also known as the “King of Spices” and has a wide range of health benefits. Black pepper is said to cure colds and coughs and is the perfect ingredient to make your food spicier in an enhanced way.</p><a class="btn" href="https://campco.org/pepper/">READ MORE</a></div>
+   <div class="card"><div class="img"><img src="https://campco.org/wp-content/uploads/2022/03/cocoa-crisis.jpg" alt="cocoa"><h2>Cocoa</h2></div>
+    <h3>Cocoa</h3><p>We purchase high-quality cocoa, thus improving the livelihood of farmers. Cocoa powder is produced by grinding the seeds of the fruit of a tropical cacao tree. The beans have their hulls removed and are then processed. The leftover solids are further ground and sold as cocoa powder.</p><a class="btn" href="https://campco.org/cocoa/">READ MORE</a></div>
+   <div class="card"><div class="img"><img src="https://campco.org/wp-content/uploads/2022/03/rubber.jpg" alt="rubber"><h2>Rubber</h2></div>
+    <h3>Rubber</h3><p>We have been successfully procuring rubber from parts of Karnataka and Kerala. With a lot of arecanut growers taking up rubber cultivation to boost their income, we have diversified into rubber trading to support our farmers and increase their income.</p><a class="btn" href="https://campco.org/rubber/">READ MORE</a></div>
+  </div>
+ </div>
+</section>
+
+<div class="counters">
+ <div class="container grid">
+  <div><img src="https://campco.org/wp-content/uploads/2022/03/team-150x150.png" alt="team"><div class="n">1,50,000+</div><div class="l">MEMBERS</div></div>
+  <div><img src="https://campco.org/wp-content/uploads/2025/12/industry-1-150x150.png" alt="factory"><div class="n">1</div><div class="l">FACTORY</div></div>
+  <div><img src="https://campco.org/wp-content/uploads/2022/03/branches-150x150.png" alt="branches"><div class="n">156</div><div class="l">BRANCHES</div></div>
+  <div><img src="https://campco.org/wp-content/uploads/2022/03/shareholder-150x150.png" alt="directors"><div class="n">19</div><div class="l">DIRECTORS</div></div>
+ </div>
+</div>
+
+<section class="msgs">
+ <div class="container">
+  <div class="msg">
+   <div style="max-width:300px"><img src="https://campco.org/wp-content/uploads/2025/12/1-sr-satishchandra-president.jpg" alt="Sri. S.R. Sathishchandra" style="width:100%"><p class="designation">Sri. S.R.SATHISHCHANDRA</p></div>
+   <div>
+    <h4>President’s <span class="color-primary">Message</span></h4>
+    <p>It is with gratitude and renewed commitment that I assume office as the President of The CAMPCO Ltd. for the second time. This honour is a responsibility bestowed upon me by thousands of farmers who look to CAMPCO as their strength, their support, and their extended family.</p>
+    <a class="btn" href="https://campco.org/about-us/#Sale-FAQ10b2-9dbf">READ MORE</a>
+   </div>
+  </div>
+  <div class="msg">
+   <div>
+    <h4>Managing Director’s <span class="color-primary">Message</span></h4>
+    <p>I am honored as we embark on a new chapter in our journey together at CAMPCO. As a farmer-led organization, our roots run deep in the soil of community, solidarity, and shared purpose. CAMPCO, a multi-state cooperative society is committed to the betterment of farmers since inception in the year 1973.</p>
+    <p>Our journey began with a focus on Arecanut, a vital crop in the region, and over the years, we have diversified our offerings to include Cocoa, Rubber, Pepper and Coconut as well.</p>
+    <a class="btn" href="https://campco.org/about-us/#1649412489819-89557afb-8c21">READ MORE</a>
+   </div>
+   <div style="max-width:300px"><img src="https://campco.org/wp-content/uploads/2025/12/3-satynarayana.jpg" alt="Dr BV Satyanarayana - Managing Director" style="width:100%"><p class="designation">Dr. B V Sathyanarayana</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <h4 class="heading">News and <span>Events</span></h4>
+  <div class="sep"></div>
+  <p class="sub">Stay updated on Campco’s latest announcements/news and get access to our press releases, photos, videos, speeches and more right here!</p>
+ </div>
+ <div class="news" style="margin-top:30px">
+  <div class="item"><img src="https://campco.org/wp-content/uploads/2026/08/vikas-lakhera-01-360x255.jpg" alt="" style="width:100%"><div class="ov"><h4>Lt Gen Vikas Lakhera, AVSM, SM Visits CAMPCO Chocolate Factory</h4><div class="date">August 09, 2026</div><a class="btn" href="https://campco.org/lt-gen-vikas-lakhera-avsm-sm-visits-campco-chocolate-factory/">READ MORE</a></div></div>
+  <div class="item"><img src="https://campco.org/wp-content/uploads/2026/08/campco-news-images-03-360x255.jpg" alt="" style="width:100%"><div class="ov"><h4>CAMPCO Delegation Meets Union Ministers Amit Shah and Nirmala Sitharaman in New Delhi</h4><div class="date">August 01, 2026</div><a class="btn" href="https://campco.org/campco-delegation-meets-union-home-cooperation-minister-shri-amit-shah/">READ MORE</a></div></div>
+  <div class="item"><img src="https://campco.org/wp-content/uploads/2026/07/campco-foundation-day-360x255.jpg" alt="" style="width:100%"><div class="ov"><h4>CAMPCO Marks Foundation Day, Celebrates 5 Decade Co-op Journey</h4><div class="date">July 13, 2026</div><a class="btn" target="_blank" rel="noopener" href="https://www.indiancooperative.com/from-states/campco-marks-foundation-day-celebrates-5-decade-co-op-journey/">READ MORE</a></div></div>
+ </div>
+</section>
+
+<footer>
+ <div class="container main-footer">
+  <div class="row">
+   <div class="col"><h5>About Campco</h5><p>CAMPCO is one of the few leading cooperative institutions in the Country working towards building a community of growers and farmers.</p></div>
+   <div class="col"><h5>Quick Links</h5><ul>
+    <li><a href="https://campco.org/about-us/">About Us</a></li>
+    <li><a href="https://campcocart.com/" target="_blank">Chocolates</a></li>
+    <li><a href="https://campco.org/areca/">Products</a></li>
+    <li><a href="https://campco.org/board-of-directors/">Directors</a></li>
+    <li><a href="https://campco.org/farmers-desk/">Farmer's Desk</a></li></ul></div>
+   <div class="col"><h5>Quick Links</h5><ul>
+    <li><a href="https://campco.org/tender/">Tenders</a></li>
+    <li><a href="#">Policy</a></li>
+    <li><a href="https://campcocart.com/pages/visit-campco-factory" target="_blank">Industrial Visit</a></li>
+    <li><a href="https://campco.org/board-of-directors/">Board Of Directors</a></li>
+    <li><a href="https://campco.org/careers/">Careers</a></li></ul></div>
+   <div class="col"><h5>Contact Details</h5><div style="line-height:2">
+    <i class="fa fa-location-arrow"></i> The CAMPCO Ltd.<br>P.B.No.223, “Varanashi Towers”, Mission Street,<br>Mangalore, Dakshina Kannada, KARNATAKA -575001.<br>
+    <i class="fa fa-envelope-o"></i> Email: <a href="mailto:info@campco.org">info@campco.org</a></div></div>
+  </div>
+ </div>
+ <div class="copy">&copy; 2026 <a href="https://campco.org/">Campco</a>. All rights reserved</div>
+</footer>
+
+<script>
+// simple hero rotator
+(function(){var i=0,s=document.querySelectorAll('#hero img');setInterval(function(){s[i].classList.remove('on');i=(i+1)%s.length;s[i].classList.add('on')},5000)})();
+</script>
+
+<!-- Campco chatbot -->
+<script>
+/* Chatbot settings (all optional) - see README.md */
+window.CampcoBotConfig = {
+  formUrl: '',      /* e.g. 'https://campco.org/server/enquiry.php' - where enquiry forms are posted */
+  whatsapp: '',     /* e.g. '919XXXXXXXXX' (country code, no +) - shows WhatsApp buttons when set */
+  logUrl: ''        /* optional: receives unanswered / feedback / form events */
+};
+</script>
+<script src="data/bundle.js" defer></script>
+<script src="chatbot-engine.js" defer></script>
+<script src="chatbot.js" defer></script>
+</body>
+</html>

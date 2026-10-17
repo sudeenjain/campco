@@ -1,0 +1,9 @@
+{
+ "_readme": "Newest first is NOT required - the bot sorts by date. Add one object per news item. date is YYYY-MM-DD.",
+ "updated": "2026-10-16",
+ "items": [
+  { "date": "2026-08-09", "title": "Lt Gen Vikas Lakhera, AVSM, SM Visits CAMPCO Chocolate Factory", "url": "https://campco.org/lt-gen-vikas-lakhera-avsm-sm-visits-campco-chocolate-factory/" },
+  { "date": "2026-08-01", "title": "CAMPCO Delegation Meets Union Ministers Amit Shah and Nirmala Sitharaman in New Delhi", "url": "https://campco.org/campco-delegation-meets-union-home-cooperation-minister-shri-amit-shah/" },
+  { "date": "2026-07-13", "title": "CAMPCO Marks Foundation Day, Celebrates 5 Decade Co-op Journey", "url": "https://www.indiancooperative.com/from-states/campco-marks-foundation-day-celebrates-5-decade-co-op-journey/" }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "_readme": "DAILY RATES FEED. Leave 'items' empty and the bot will keep telling people to call the branch. When filled, the bot shows rates ONLY if 'updated' is within maxAgeHours; otherwise it hides the numbers and says when they were last published. commodity must be one of: areca, cocoa, pepper, rubber, coconut. Give either price, or min and max. Example item: { \"commodity\": \"areca\", \"variety\": \"<variety name>\", \"unit\": \"per quintal\", \"price\": 0 }",
+ "updated": null,
+ "maxAgeHours": 30,
+ "note": "",
+ "items": []
+}
